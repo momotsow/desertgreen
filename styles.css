@@ -17,6 +17,10 @@ ul {
   text-align: center;
 }
 
+.list-style-none {
+  list-style: none;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -102,16 +106,16 @@ ul li.p-cta.call2action a {
   position: absolute;
   width: 100%;
   min-height: 100%;
-  height: 100vh;
+  height: auto;
   z-index: -1;
 }
 
 .headline {
   background-color: #002512;
   color: #fff;
-  height: 515px;
+  height: auto;
   padding: 30px 20px;
-  
+  margin-top: 5rem;
 }
 
 .intro {
@@ -133,10 +137,24 @@ ul li.p-cta.call2action a {
   text-align: center;
   text-decoration: none;
   color: #ffffff;
-  background-color: red;
+  background-color: transparent;
+  border: 1px solid #fff;
   border-radius: 6px;
   outline: none;
   text-transform: capitalize;
+}
+
+.call2actions-buttons:hover {
+  color: #002512;
+  background-color: #FFC533;
+  border: none;
+}
+
+.call2actions-buttons.recommendation {
+  color: #ffffff;
+  background-color: #002512;
+  border: 1px solid #002512;
+
 }
 
 /* about */
@@ -176,63 +194,98 @@ list-style: disc;
 text-align: left;
 }
 
+.service-list {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem;
+}
+
 
 .form-holder {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
 
 .form-holder .form-content {
-position: relative;
-text-align: center;
-display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-justify-content: center;
-justify-content: center;
--webkit-align-items: center;
-align-items: center;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
   
 /* Slider */
-
-@keyframes scroll {
-    0%{
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-250px * 7));
-    }
-}
+.container {
+  overflow: hidden;}
 .slider {
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-    width: auto;
+  animation: slidein 30s linear infinite;
+  white-space: nowrap;}
+  .slider-logo {
+    margin-right: 19rem;
+  }
+.logos {
+  width: 100%;
+  display: inline-block;
+  margin: 3rem 0;
+}
+.image {
+  width: calc(100% / 5);
+  animation: fade-in 0.5s 
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 
-.slider .slide-track {
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
 }
 
-.slider .slide {
-    height: 100px;
-    width: 250px;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.yellow-bg {
+  background-color: #FFC533;
+  padding: 10px 20px;
+}
+.yellow-bg .heading h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+.yellow-bg .heading p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0px 13rem;
+}
+
+.soil .heading h2 {
+  font-size: 3rem;
+  margin: 0;
 }
 
 
 .form-content .form-items {
 /* border: 3px solid #fff; */
-padding: 40px;
+padding: 20px;
 display: inline-block;
 width: 100%;
 -webkit-border-radius: 10px;
@@ -241,6 +294,7 @@ border-radius: 10px;
 text-align: left;
 -webkit-transition: all 0.4s ease;
 transition: all 0.4s ease;
+z-index: 2;
 }
 
 .form-content h3 {
@@ -336,9 +390,72 @@ color: #ff606e;
 .valid-feedback{
 color: #2acc80;
 }
-.contact, .contact a {
+
+.contact {
   background-color: #002512;
   color: #ffffff;
+}
+
+.contact a {
+  color: #ffffff;
+}
+.social-media {
+  display: flex;
+  padding-left: 0;
+  align-items: center;
+
+}
+
+.social-media li {
+  margin-right: 10px;
+}
+
+.logo-location {
+  background-image: url(./assets/img/logo-favicon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 300px;
+  width: 220px;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.carrot {
+  background-image: url(./assets/img/carrot.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 300px;
+  width: 220px;
+  z-index: -1;
+  right: 0;
+}
+
+.cabbage { 
+  background-image: url(./assets/img/cabbage.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 300px;
+  width: 246px;
+  z-index: -1;
+}
+
+.onion { 
+  background-image: url(./assets/img/onion.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 300px;
+  width: 246px;
+  z-index: -1;
+  margin-top: -160px;
+  right: 45px;
+}
+
+footer {
+  text-align: center;
 }
 
   @media only screen and (min-width: 768px) {
@@ -443,11 +560,11 @@ color: #2acc80;
   
     .headline {
       background-color: #002512;
-      /* opacity: 0.75; */
       color: #fff;
       width: 70%;
-      height: 373px;
+      height: auto;
       padding: 30px 20px;
+      margin-top: 1rem;
       
     }
 
@@ -457,11 +574,12 @@ color: #2acc80;
       z-index: 1;
     }
 
+    .discription {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
     .carrot {
-      background-image: url(./assets/img/carrot.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
       height: 300px;
       width: 220px;
       z-index: -1;
@@ -469,14 +587,11 @@ color: #2acc80;
     }
 
     .logo-location {
-      background-image: url(./assets/img/carrot.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
       height: 300px;
       width: 220px;
-      z-index: -1;
-      right: 0;
+      z-index: 0;
+      opacity: 0.6;
+      margin-top: 100px;
     }
 
     .sli {
@@ -492,5 +607,20 @@ color: #2acc80;
     .sli .card {
       width: 18rem;
     }
-  
+    .slider-logo {
+      margin-right: 18rem;
+    }
+    .soil .heading h2 {
+      font-size: 5rem;
+      margin: 4rem 10rem;
+    }
+      
+    .yellow-bg {
+      padding: 10px 100px;
+    }
+    .yellow-bg .heading h2 {
+      font-size: 5rem;
+      font-weight: bolder;
+      letter-spacing: 5px;
+    }
   }
