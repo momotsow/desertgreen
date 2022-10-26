@@ -154,7 +154,11 @@ ul li.p-cta.call2action a {
   color: #ffffff;
   background-color: #002512;
   border: 1px solid #002512;
+}
 
+.call2actions-buttons.recommendation:hover {
+  color: #002512;
+  background-color: #FFC533;
 }
 
 /* about */
