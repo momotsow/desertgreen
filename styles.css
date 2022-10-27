@@ -463,7 +463,174 @@ footer {
   text-align: center;
 }
 
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .secondary-cta img {
+    width: 300px;
+}
+  .hero-section {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    display: flex;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .secondary-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 10px 0 10px 0;
+  }
+
+  .second-cta {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    justify-content: right;
+  }
+
+  .s-list {
+    margin-right: 30px;
+  }
+
+  header {
+    background: #FFC533
+  }
+
+  .p-cta {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+  }
+
+  .secondary-cta ul li a {
+    color: #fff !important;
+  }
+
+  ul li.p-cta.call2action a {
+    color: #fff !important;
+  }
+
+  .nav-list > ul li a:hover,
+  .nav-list > ul li a:active {
+    font-weight: 600;
+    color: #fff!important;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  #more {
+    display: flex !important;
+  }
+
+  ul {
+    margin-top: unset !important;
+  }
+
+  .nav-list {
+    display: flex;
+    width: 100%;
+    background: unset;
+    height: 10vh;
+    position: unset;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-list ul {
+    display: flex;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+    align-items: center;
+  }
+
+  #mobile-exit {
+    display: none;
+  }
+
+  .intro {
+    font-size: 30px;
+  }
+
+  .headline {
+    background-color: #002512;
+    color: #fff;
+    width: 70%;
+    height: auto;
+    padding: 30px 20px;
+    margin-top: 1rem;
+    
+  }
+
+  .headline .title {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .discription {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .carrot {
+    height: 300px;
+    width: 220px;
+    z-index: -1;
+    right: 0;
+  }
+
+  .logo-location {
+    height: 300px;
+    width: 220px;
+    z-index: 0;
+    opacity: 0.6;
+    margin-top: 100px;
+  }
+
+  .sli {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-width: 100%;
+    overflow-x: auto;
+  }
+
+  .sli .card {
+    width: 14rem;
+  }
+  .slider-logo {
+    margin-right: 18rem;
+  }
+  .soil .heading h2 {
+    font-size: 2.9rem;
+    margin: 4rem 10rem;
+  }
+    
+  .yellow-bg {
+    padding: 10px 100px;
+  }
+  .yellow-bg .heading h2 {
+    font-size: 2.9rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+  }
+}
+
+  @media only screen and (min-width: 1025px) {
     .secondary-cta img {
       width: 300px;
   }
