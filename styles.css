@@ -472,6 +472,14 @@ footer {
 }
 
 /* about page */
+
+.about {
+  margin-bottom: 5rem;
+}
+.about-list {
+  list-style: disc;
+  text-align: left;
+}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
