@@ -24,6 +24,9 @@ ul {
 a {
   text-decoration: none !important;
 }
+h2 {
+  font-weight: 800;
+}
 
 .about, .services, .customer-logos {
   margin-top: 50px;
@@ -60,8 +63,14 @@ ul li.p-cta.call2action a {
 
 .p-cta a {
   color: #002512;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 
+.p-cta a:active {
+  color: #fff;
+  background: transparent;
+}
 .logo {
   display: none;
 }
@@ -163,6 +172,9 @@ ul li.p-cta.call2action a {
 }
 
 /* about */
+.about-text {
+  margin: 10px 0px 0px 10px;
+}
 
 .sli {
   display: block;
@@ -226,6 +238,7 @@ text-align: left;
   justify-content: center;
   -webkit-align-items: center;
   align-items: center;
+  width: 100%;
 }
 
   
@@ -292,7 +305,7 @@ text-align: left;
 /* border: 3px solid #fff; */
 padding: 20px;
 display: inline-block;
-width: 100%;
+width: 75%;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
@@ -456,7 +469,7 @@ color: #2acc80;
   width: 246px;
   z-index: -1;
   margin-top: -160px;
-  right: 45px;
+  right: -10px;
 }
 
 footer {
@@ -763,7 +776,7 @@ img {vertical-align: middle;}
     }
   
     .p-cta {
-      font-size: 15px;
+      font-size: 18px;
       font-weight: 500;
       margin-left: 30px;
     }
@@ -873,7 +886,7 @@ img {vertical-align: middle;}
     }
     .soil .heading h2 {
       font-size: 5rem;
-      margin: 4rem 10rem;
+      margin: 4rem 10rem 2rem 10rem;
     }
       
     .yellow-bg {
