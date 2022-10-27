@@ -172,12 +172,13 @@ ul li.p-cta.call2action a {
 }
 
 /* about */
-.about-text {
+.text-paragraph {
   margin: 10px 0px 0px 10px;
 }
 
 .sli {
   display: block;
+  margin-bottom: 2rem;
  
 }
 .card {
@@ -885,7 +886,7 @@ img {vertical-align: middle;}
       margin-right: 18rem;
     }
     .soil .heading h2 {
-      font-size: 5rem;
+      font-size: 4rem;
       margin: 4rem 10rem 2rem 10rem;
     }
       
