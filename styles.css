@@ -6,7 +6,7 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
-    /* overflow-x: hidden; */
+    /* overflow-x:hidden; */
 }
 .row {
   padding: 0 !important;
@@ -217,6 +217,9 @@ text-align: left;
   margin-bottom: 3rem;
 }
 
+.partners-section {
+  margin: 2rem 0rem 1rem 0rem;
+}
 
 .form-holder {
   display: flex;
@@ -482,7 +485,7 @@ footer {
 }
 
 .team-v11 .team {
-  height: 400px;
+  height: 450px;
 }
 
 /* about page */
