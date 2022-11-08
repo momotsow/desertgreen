@@ -9,6 +9,10 @@
     /* overflow-x:hidden; */
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+  color: #002512
+} 
+
 .row {
   padding: 0 !important;
 }
@@ -216,6 +220,7 @@ body > section.container.farmer-trader > div:nth-child(3) > div > div > ul {
 .our-solution-list {
   text-align: left;
   padding: 10px 0 0 0;
+  list-style: inside;
 }
 
 .farmer-trader ul > li:nth-child(n) {
