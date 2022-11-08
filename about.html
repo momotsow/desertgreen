@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,75 +15,82 @@
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
 
 </head>
+
 <body>
-            <div class="secondary-cta text-center">
-                <img src="./assets/img/logo.png" alt="Desert Green Logo">
+    <div class="secondary-cta text-center">
+        <img src="./assets/img/logo.png" alt="Desert Green Logo">
+    </div>
+    <header>
+        <nav class="text-center">
+            
+            <img class="mobile-menu" id="mobileMenu" src="./assets/img/ic_menu.svg" alt="Open Navigation">
+
+            <div class="nav-list">
+                <div class="close-menu">
+                    <span id="mobile-exit">&times;</span>
+                </div>
+                <ul>
+                    <li class="p-cta"><a href="#">Home</a></li>
+                    <li class="p-cta"><a href="#about">About</a></li>
+                    <li class="p-cta"><a href="#services">Services</a></li>
+                    <li class="p-cta"><a href="#partners">Partners</a></li>
+                    <li class="p-cta"><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <header>
-                <nav class="container text-center">
-                    
-                    <img class="mobile-menu pb-4" id="mobileMenu" src="./assets/img/ic_menu.svg" alt="Open Navigation">
+        </nav>
+    </header>
+    <section class="farmer-trader">
+        <h2 class="container">About Us</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 greenFarm about-gf">
+                    <h4>Farmer</h4>
+                    <ul class="about-list">
+                        <li>Invisible demand.</li>
+                        <li>Unstable Pricing.</li>
+                        <li>Long payment cycle.</li>
+                        <li>Income loss & Produce waste.</li>
     
-                    <div class="nav-list">
-                        <span id="mobile-exit">&times;</span>
-                        <ul>
-                            <li class="p-cta"><a href="index.html">Home</a></li>
-                            <li class="p-cta"><a href="index.html#about">About</a></li>
-                            <li class="p-cta"><a href="index.html#services">Services</a></li>
-                            <li class="p-cta"><a href="index.html#partners">Partners</a></li>
-                            <li class="p-cta"><a href="index.html#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            <section class="container about">
-                <h2>About Us</h2>
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 greenFarm">
-                        <h4>Farmer</h4>
-                        <ul class="about-list">
-                            <li>Invisible demand.</li>
-                            <li>Unstable Pricing.</li>
-                            <li>Long payment cycle.</li>
-                            <li>Income loss & Produce waste.</li>
-                           
-                        </ul>
-                    </div>
-                    <div class="col-md-6 col-sm-12 greenKart">
-                        <h4>Trader</h4>
-                        <ul class="about-list">
-                            <li>Invisible supply.</li>
-                            <li>Low individual buying power.</li>
-                            <li>Inconvinience & High Delivery cost.</li>
-                        </ul>
-                        <div class="onion"></div>
-                    </div>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div>
-                            <h4>Our Soulution</h4>
-                            <ul>
-                                <li>Geo-Trading <span> A trader mapping feature enabling traders in one location to Bulk-buy in groups and farmers to share logistics</span>
-                                </li>
-                                <li>Whatsapp Chatbot <span>A Chat-bot that can collect orders from traders & match to available inventory from farmers in multi-language.
+                <div class="col-md-6 col-sm-12 greenKart about-gf">
+                    <h4>Trader</h4>
+                    <ul class="about-list">
+                        <li>Invisible supply.</li>
+                        <li>Low individual buying power.</li>
+                        <li>Inconvinience & High Delivery cost.</li>
+                    </ul>
+                    <div class="onion"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 our-solution">
+                    <div>
+                        <h4>Our Soulution</h4>
+                        <ul class="our-solution-list">
+                            <li>Geo-Trading <span> A trader mapping feature enabling traders in one location to Bulk-buy in
+                                    groups and farmers to share logistics</span>
+                            </li>
+                            <li>Whatsapp Chatbot <span>A Chat-bot that can collect orders from traders & match to available
+                                    inventory from farmers in multi-language.
                                 </span></li>
-                                <li><span>Buy-Now-Pay-Later</span>A feature that allows Traders to order stock & pay later, based on credit scores, to improve their buying power 
-                                </li>
-                                <li><span>Free Delivery in 24 hours
-                                </span> Available for all traders ordering through our platform, turning a luxury into convenience.
-                                </li>
-                            </ul>
-                        </div>
+                            <li><span>Buy-Now-Pay-Later</span>A feature that allows Traders to order stock & pay later,
+                                based on credit scores, to improve their buying power
+                            </li>
+                            <li><span>Free Delivery in 24 hours
+                                </span> Available for all traders ordering through our platform, turning a luxury into
+                                convenience.
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
             <section class="timeline">
                 <div class="wrapper">
                     <div class="center-line">
@@ -163,89 +171,91 @@
                       </div>
                   </div>
             </section>
-            <section class="container gallery">
-                <h2>Gallery</h2>
-                <div class="slideshow-container">
-                    <div class="mySlides ">
-                        <img src="./assets/img/08.jpg" alt="tomato farm" style="width:100%">
-                      </div>
-                    <div class="mySlides ">
-                      <img src="./assets/img/30.jpg" alt="farm" style="width:100%">
-                    </div>
-                    <div class="mySlides ">
-                      <img src="./assets/img/08 (2).jpg" alt="vendor" style="width:100%">
-                    </div>
-                    <div class="mySlides ">
-                        <img src="./assets/img/08 (1).jpg" alt="vendor" style="width:100%">
-                    </div>
-                    <div class="mySlides ">
-                        <img src="./assets/img/farm-khabi.jpg" alt="farm" style="width:100%">
-                    </div>
-                    <div class="mySlides ">
-                        <img src="./assets/img/04 (2).jpg" alt="farm" style="width:100%">
-                    </div>
-                    <div class="mySlides ">
-                        <img src="./assets/img/02 (4).jpg" alt="farm" style="width:100%">
-                    </div>
-                    <div class="mySlides ">
-                        <img src="./assets/img/24.jpg" alt="farm" style="width:100%">
-                    </div>
-                    <div class="mySlides ">
-                        <img src="./assets/img/22.jpg" alt="farm" style="width:100%">
-                    </div>
-                    <div class="mySlides ">
-                        <img src="./assets/img/11.jpg" alt="farm" style="width:100%">
-                    </div>
-                    <div class="mySlides ">
-                        <img src="./assets/img/12.jpg" alt="farm" style="width:100%">
-                    </div>
-                    <div class="mySlides ">
-                        <img src="./assets/img/07 (2).jpg" alt="farm" style="width:100%">
-                    </div>
-                        
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-                    
-                    </div>
-                    <br>
-                    
-                    <div style="text-align:center">
-                      <span class="dot" onclick="currentSlide(1)"></span> 
-                      <span class="dot" onclick="currentSlide(2)"></span> 
-                      <span class="dot" onclick="currentSlide(3)"></span> 
-                      <span class="dot" onclick="currentSlide(4)"></span> 
-                      <span class="dot" onclick="currentSlide(5)"></span> 
-                      <span class="dot" onclick="currentSlide(6)"></span> 
-                      <span class="dot" onclick="currentSlide(7)"></span> 
-                      <span class="dot" onclick="currentSlide(8)"></span> 
-                      <span class="dot" onclick="currentSlide(9)"></span> 
-                      <span class="dot" onclick="currentSlide(10)"></span> 
-                      <span class="dot" onclick="currentSlide(11)"></span> 
-                      <span class="dot" onclick="currentSlide(12)"></span> 
-                    </div>
-            </section>
-            <section class="sm-text-center container team-members">
-                <div class="container content-md">
-                    <h2>Team Members</h2>
-                    <div class="row margin-t-80 md-margin-b-80">
-                        <div class="col-lg-4 col-md-12 col-sm-12 sm-margin-b-40">
-                            <!-- Team v11 -->
-                            <div class="team-v11">
-                                <div class="row card team">
-                                    <div class="col-md-12 card-body">
-                                        <div class="margin-b-10 card-title">
-                                            <h4 class="team-v11-name">Tumelo Chiloane</h4>
-                                            <span class="team-v11-position">CEO &amp; Co-Founder</span>
-                                        </div>
-                                        <div class="margin-t-20 card-text">
-                                            <img src="./assets/img/tumelo.svg" alt=""  class="team-img">
-                                            <!-- <p class="bio">A 29-year-old South African born Social Afropreneur with a passion for technology and a vision for an Africa United. A trained & practiced professional Industrial Engineer graduating B.Tech Degree at the Tshwane University of Technology. His focus roles in Desert Green includes but not limited to: Business strategy development, new markets, partnership development, business modeling, process design, and development & continuous improvement.</p> -->
-                                        </div>
-                                       
-                                    </div>
+    <section class="container gallery">
+        <h2>Gallery</h2>
+        <div class="slideshow-container">
+            <div class="mySlides ">
+                <img src="./assets/img/08.jpg" alt="tomato farm" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="./assets/img/30.jpg" alt="farm" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="./assets/img/08 (2).jpg" alt="vendor" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="./assets/img/08 (1).jpg" alt="vendor" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="./assets/img/farm-khabi.jpg" alt="farm" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="./assets/img/04 (2).jpg" alt="farm" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="./assets/img/02 (4).jpg" alt="farm" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="./assets/img/24.jpg" alt="farm" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="./assets/img/22.jpg" alt="farm" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="./assets/img/11.jpg" alt="farm" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="./assets/img/12.jpg" alt="farm" style="width:100%">
+            </div>
+            <div class="mySlides ">
+                <img src="./assets/img/07 (2).jpg" alt="farm" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+        </div>
+    </section>
+    <section class="sm-text-center container team-members">
+        <div class="content-md">
+            <h2>Team Members</h2>
+            <div class="row margin-t-80 md-margin-b-80">
+                <div class="team col-lg-4 col-md-12 col-sm-12 sm-margin-b-40">
+                    <!-- Team v11 -->
+                    <div class="team-v11">
+                        <div class="row card team">
+                            <div class="col-md-12 card-body">
+                                <div class="margin-b-10 card-title">
+                                    <h4 class="team-v11-name">Tumelo Chiloane</h4>
+                                    <span class="team-v11-position">CEO &amp; Co-Founder</span>
                                 </div>
+                                <div class="margin-t-20 card-text">
+                                    <img src="./assets/img/tumelo.svg" alt=""  class="team-img">
+                                            <!-- <p class="bio">A 29-year-old South African born Social Afropreneur with a passion
+                                        for technology and a vision for an Africa United. A trained & practiced
+                                        professional Industrial Engineer graduating B.Tech Degree at the Tshwane
+                                        University of Technology. His focus roles in Desert Green includes but not
+                                        limited to: Business strategy development, new markets, partnership development,
+                                        business modeling, process design, and development & continuous improvement.</p> -->
+                                </div>
+
                             </div>
-                            <!-- End Team v11 -->
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12 sm-margin-b-40">
                             <!-- Team v11 -->
@@ -263,8 +273,8 @@
                                         
                                     </div>
                                 </div>
+
                             </div>
-                            <!-- End Team v11 -->
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12 sm-margin-b-40">
                             <!-- Team v11 -->
@@ -340,14 +350,18 @@
                      
                     </div>
                 </div>
-            </section>    
-            <section class="yellow-bg h-100">
+            </div>
+        </div>
+    </section>
+    
+    <section class="yellow-bg h-100">
         <div class="heading">
-            <h2 class="text-center">Desert Green Africa</h2>
+            <h2 class="text-center blend1">Desert Green Africa</h2>
         </div>
         <p class="text-center">Unlocking the agricultural value of underutilized land in Africa.</p>
     </section>
-    <section class="contact">
+
+    <section class="contact-container" id="contact">
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="form-body">
@@ -359,40 +373,40 @@
                                     <p>Fill in the data below.</p>
                                     <form class="requires-validation" novalidate>
                                         <div class="col-md-12">
-                                           <input class="form-control" type="text" name="name" placeholder="Full Name" required>
-                                           <div class="valid-feedback">Full name field is valid!</div>
-                                           <div class="invalid-feedback">Full name field cannot be blank!</div>
+                                            <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                                            <div class="valid-feedback">Full name field is valid!</div>
+                                            <div class="invalid-feedback">Full name field cannot be blank!</div>
                                         </div>
                                         <div class="col-md-12">
                                             <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
-                                             <div class="valid-feedback">Email field is valid!</div>
-                                             <div class="invalid-feedback">Email field cannot be blank!</div>
+                                                <div class="valid-feedback">Email field is valid!</div>
+                                                <div class="invalid-feedback">Email field cannot be blank!</div>
                                         </div>
                                         <div class="col-md-12">
                                             <input class="form-control" type="text" name="phone" placeholder="Phone Number" required>
                                             <div class="valid-feedback">Phone Number field is valid!</div>
                                             <div class="invalid-feedback">Phone Number field cannot be blank!</div>
-                                         </div>
-                                         <div class="col-md-12">
-                                             <input class="form-control" type="text" name="Location" placeholder="Location" required>
-                                              <div class="valid-feedback">Location is valid!</div>
-                                              <div class="invalid-feedback">Location cannot be blank!</div>
-                                         </div>
-                                       <div class="col-md-12">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input class="form-control" type="text" name="Location" placeholder="Location" required>
+                                                <div class="valid-feedback">Location is valid!</div>
+                                                <div class="invalid-feedback">Location cannot be blank!</div>
+                                            </div>
+                                        <div class="col-md-12">
                                             <select class="form-select mt-3" required>
-                                                  <option selected disabled value="">Service</option>
-                                                  <option value="Market Access">Market Access</option>
-                                                  <option value="Soil Sampling">Soil Sampling Guidance</option>
-                                                  <option value="Fertilization Recommendations">Fertilization Recommendations</option>
-                                                  <option value="Irrigation Scheduling">Irrigation Scheduling</option>
-                                           </select>
+                                                    <option selected disabled value="">Service</option>
+                                                    <option value="Market Access">Market Access</option>
+                                                    <option value="Soil Sampling">Soil Sampling Guidance</option>
+                                                    <option value="Fertilization Recommendations">Fertilization Recommendations</option>
+                                                    <option value="Irrigation Scheduling">Irrigation Scheduling</option>
+                                            </select>
                                             <div class="valid-feedback">You selected a position!</div>
                                             <div class="invalid-feedback">Please select a position!</div>
-                                       </div>
-                                       <div class="col-md-12">
+                                        </div>
+                                        <div class="col-md-12">
                                         <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Additional Information"></textarea>
-                                       </div>
-                                      
+                                        </div>
+                                        
                                         <div class="form-button mt-3">
                                             <button id="submit" type="submit" class="call2actions-buttons">Send</button>
                                         </div>
@@ -403,7 +417,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+
+            <div class="col-md-6 col-sm-12 contact-info">
                 <div class="form-body">
                     <div class="row">
                         <div class="form-holder">
@@ -418,13 +433,14 @@
                                         <p><a href="www.desertgreen.co.za">www.desertgreen.co.za</a></p>
                     
                                     </div>
-                                    <div >
+                                    
+                                    <div class="social-media-list">
                                         <ul class="social-media">
                                             <li>
                                                 <a href=""><img width="30px" src="./assets/img/whatsapp.png" alt="whatsapp icon"></a>
                                             </li>
                                             <li>
-                                                <a href=""><img width="30px" src="./assets/img/twitter.png" alt="twitter icon"></a>
+                                                <a href="https://www.linkedin.com/company/desert-green-africa/"><img width="30px" src="./assets/img/linkedin.svg" alt="twitter icon"></a>
                                             </li>
                                             <li>
                                                 <a href=""><img width="20px" src="./assets/img/facebook.png" alt="facebook icon"></a>
@@ -433,17 +449,14 @@
                                     </div>
                                     <div class="address">
                                         <h4>Address</h4>
-                                        <p>7 Topaz Avenue</p>
-                                        <p>Dersley</p>
-                                        <p>Springs</p>
-                                        <p>Johannesburg 1559</p>
+                                        <p><a href="http://maps.google.com/?q=137 West St, Sandown, Sandton, 2031">137 West Street Sandton, Johannesburg</a></p>
                                     </div>
                                     <div>
                                         <h4>Our Service</h4>
-                                        <p><a href="">Market Access</a></p>
-                                        <p><a href="">Soil Sampling Guidance</a></p>
-                                        <p><a href="">Fertilization Recommendations</a></p>
-                                        <p><a href="">Irrigation Scheduling</a></p>
+                                        <p><a href="">Geo-Trading</a></p>
+                                        <p><a href="">Whatsapp Chatbot</a></p>
+                                        <p><a href="">Buy-Now-Pay-Later</a></p>
+                                        <p><a href="">Free Delivery in 24 hours</a></p>
                                     </div>
                                     </div>
                                     </div>
@@ -455,11 +468,15 @@
                 </div>
             </div>
     </section>
+
     <footer>
         <p>All rights reserved. &copy; Desert Green</p>
     </footer>
 
     <script src="about.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

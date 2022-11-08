@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="hero.css">
+    
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -359,41 +361,45 @@
 
     <!-- end of modal -->
     <section class="hero-section">
-        <div class="headline-img"></div>
-        <div class="secondary-cta text-center">
-            <img src="./assets/img/logo.png" alt="Desert Green Logo">
+        <div class="header-logo">
+            <div class="secondary-cta text-center">
+                <img src="./assets/img/logo.png" alt="Desert Green Logo">
+            </div>
+            <header>
+                <nav class="text-center">
+                    
+                    <img class="mobile-menu" id="mobileMenu" src="./assets/img/ic_menu.svg" alt="Open Navigation">
+    
+                    <div class="nav-list">
+                        <div class="close-menu">
+                            <span id="mobile-exit">&times;</span>
+                        </div>
+                        <ul>
+                            <li class="p-cta"><a href="#">Home</a></li>
+                            <li class="p-cta"><a href="#about">About</a></li>
+                            <li class="p-cta"><a href="#services">Services</a></li>
+                            <li class="p-cta"><a href="#partners">Partners</a></li>
+                            <li class="p-cta"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
         </div>
-        <header>
-            <nav class="container text-center">
-
-                <img class="mobile-menu pb-4" id="mobileMenu" src="./assets/img/ic_menu.svg" alt="Open Navigation">
-
-                <div class="nav-list">
-                    <span id="mobile-exit">&times;</span>
-                    <ul>
-                        <li class="p-cta"><a href="#">Home</a></li>
-                        <li class="p-cta"><a href="#about">About</a></li>
-                        <li class="p-cta"><a href="#services">Services</a></li>
-                        <li class="p-cta"><a href="#partners">Partners</a></li>
-                        <li class="p-cta"><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <div class="container">
-            <div class="headline">
-
-                <h1 class="title font-face">Transforming the informal retail to provide viable market access for farmers
-                </h1>
-                <p class="discription font-face">GreenKart is a B2B commerce platform for farmers to sell their produce
-                    directly to informal, with shared logistics services, delivered to their market stall</p>
+        <div class="headline">
+            <div class="headline-content">
+                <h1 class="title font-face">Transforming the informal retail to provide viable market access for farmers</h1>
+                <p class="discription font-face">GreenKart is a B2B commerce platform for farmers to sell their produce directly to informal, with shared logistics services, delivered to their market stall</p>
                 <div class="call2actions">
-                    <a class="call2actions-buttons myBtn_multi" data-toggle="modal" href="#myModal" id="farmer">I aM a
-                        farmer</a>
-                    <a class="call2actions-buttons myBtn_multi" data-toggle="modal" href="#myModal" id="trader">I aM a
-                        trader</a>
+                    <a class="call2actions-buttons" id="farmer" href="">I am a farmer</a>
+                    <a class="call2actions-buttons" id="trader" href="">I am a trader</a>
                 </div>
+            </div>
+
+            <div class="slideshow">
+                <div class="slideshow-image"></div>
+                <div class="slideshow-image"></div>
+                <div class="slideshow-image"></div>
+                <div class="slideshow-image"></div>
             </div>
         </div>
     </section>
@@ -465,9 +471,9 @@
                 </div>
 
                 <ul class="service-list">
-                    <li>Get your soil sampling guidance</li>
-                    <li>Get your fertilizer recommendation</li>
-                    <li>Get your crop specific irrigation scheduling</li>
+                    <li class="list">Get your soil sampling guidance</li>
+                    <li class="list">Get your fertilizer recommendation</li>
+                    <li class="list">Get your crop specific irrigation scheduling</li>
                 </ul>
                 <div class="button">
                     <a href="#contact" class="call2actions-buttons ">Coming Soon</a>
@@ -480,8 +486,8 @@
                 </div>
 
                 <ul class="service-list">
-                    <li>Service Traders or vendor in the informal market</li>
-                    <li>Service Small-scale farmer in search of a market</li>
+                    <li class="list">Service Traders or vendor in the informal market</li>
+                    <li class="list">Service Small-scale farmer in search of a market</li>
                     <li class="list-style-none"></li>
                 </ul>
                 <div class="button">
@@ -497,42 +503,32 @@
         <div class="heading">
             <h2 class="text-center">Feed the Future.</h2>
         </div>
-        <p class="text-center">Order Manje!</p>
-        <div class="text-center">
-            <a class="call2actions-buttons recommendation" href="#contact">Get Recomendation</a>
+        <div class="text-center recommendation-btn">
+            <a class="call2actions-buttons recommendation" href="#contact">Order Manje!</a>
         </div>
 
     </section>
     <section class="container partners-section" id="partners">
+        <h2 class="text-left">Partners</h2>
         <div class="container h-100">
             <div class="row align-items-center h-100">
-                <div class="container rounded">
-                    <h2 class="text-left">Partners</h2>
-                    <div class="slider">
-                        <div class="logos slider-logo">
-                            <img src="./assets/img/Digital Africa.png" height="auto" width="100%"
-                                alt="Digital Africa Logo" class="image">
-                            <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo"
-                                class="image">
-                            <img src="./assets/img/UP.jpg" height="auto" width="100%" alt="University of Pretoria Logo"
-                                class="image">
-                            <img src="./assets/img/SAB.jpg" height="auto" width="100%" alt="SAB Logo" class="image">
-                            <img src="./assets/img/The Tony Elemelu.png" height="auto" width="100%"
-                                alt="Tony Elemelu Logo" class="image">
-                            <img src="./assets/img/1000.jpg" height="auto" width="100%" alt="1000 Logo" class="image">
-                        </div>
-                        <div class="logos">
-                            <img src="./assets/img/Digital Africa.png" height="auto" width="100%"
-                                alt="Digital Africa Logo" class="image">
-                            <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo"
-                                class="image">
-                            <img src="./assets/img/UP.jpg" height="auto" width="100%" alt="University of Pretoria Logo"
-                                class="image">
-                            <img src="./assets/img/SAB.jpg" height="auto" width="100%" alt="SAB Logo" class="image">
-                            <img src="./assets/img/The Tony Elemelu.png" height="auto" width="100%"
-                                alt="Tony Elemelu Logo" class="image">
-                            <img src="./assets/img/1000.jpg" height="auto" width="100%" alt="1000 Logo" class="image">
-                        </div>
+                <div class="rounded">
+                <div class="slider">
+                    <div class="logos slider-logo">
+                    <img src="./assets/img/Digital Africa.png" height="auto" width="100%" alt="Digital Africa Logo" class="image">
+                    <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo" class="image">
+                    <img src="./assets/img/UP.jpg" height="auto" width="100%" alt="University of Pretoria Logo" class="image">
+                    <img src="./assets/img/SAB.jpg" height="auto" width="100%" alt="SAB Logo" class="image">
+                    <img src="./assets/img/The Tony Elemelu.png" height="auto" width="100%" alt="Tony Elemelu Logo" class="image">
+                    <img src="./assets/img/1000.jpg" height="auto" width="100%" alt="1000 Logo" class="image">
+                    </div>
+                    <div class="logos">
+                    <img src="./assets/img/Digital Africa.png" height="auto" width="100%" alt="Digital Africa Logo" class="image">
+                    <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo" class="image">
+                    <img src="./assets/img/UP.jpg" height="auto" width="100%" alt="University of Pretoria Logo" class="image">
+                    <img src="./assets/img/SAB.jpg" height="auto" width="100%" alt="SAB Logo" class="image">
+                    <img src="./assets/img/The Tony Elemelu.png" height="auto" width="100%" alt="Tony Elemelu Logo" class="image">
+                    <img src="./assets/img/1000.jpg" height="auto" width="100%" alt="1000 Logo" class="image">
                     </div>
                 </div>
             </div>
@@ -540,13 +536,15 @@
         </div>
         <div class="dots"></div>
     </section>
+
     <section class="yellow-bg h-100">
         <div class="heading">
-            <h2 class="text-center">Desert Green Africa</h2>
+            <h2 class="text-center blend1">Desert Green Africa</h2>
         </div>
         <p class="text-center">Unlocking the agricultural value of underutilized land in Africa.</p>
     </section>
-    <section class="contact" id="contact">
+
+    <section class="contact-container" id="contact">
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="form-body">
@@ -608,7 +606,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+
+            <div class="col-md-6 col-sm-12 contact-info">
                 <div class="form-body">
                     <div class="row">
                         <div class="form-holder">
@@ -623,7 +622,8 @@
                                         <p><a href="www.desertgreen.co.za">www.desertgreen.co.za</a></p>
 
                                     </div>
-                                    <div>
+                                    
+                                    <div class="social-media-list">
                                         <ul class="social-media">
                                             <li>
                                                 <a href=""><img width="30px" src="./assets/img/whatsapp.png"
@@ -662,6 +662,7 @@
         </div>
         </div>
     </section>
+
     <footer>
         <p>All rights reserved. &copy; Desert Green</p>
     </footer>
