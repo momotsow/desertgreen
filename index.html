@@ -14,18 +14,19 @@
 <body>
     
     <section class="hero-section">
-        <div class="headline-img"></div>
         <div class="header-logo">
             <div class="secondary-cta text-center">
                 <img src="./assets/img/logo.png" alt="Desert Green Logo">
             </div>
             <header>
-                <nav class="container text-center">
+                <nav class="text-center">
                     
-                    <img class="mobile-menu pb-4" id="mobileMenu" src="./assets/img/ic_menu.svg" alt="Open Navigation">
+                    <img class="mobile-menu" id="mobileMenu" src="./assets/img/ic_menu.svg" alt="Open Navigation">
     
                     <div class="nav-list">
-                        <span id="mobile-exit">&times;</span>
+                        <div class="close-menu">
+                            <span id="mobile-exit">&times;</span>
+                        </div>
                         <ul>
                             <li class="p-cta"><a href="#">Home</a></li>
                             <li class="p-cta"><a href="#about">About</a></li>
@@ -37,17 +38,21 @@
                 </nav>
             </header>
         </div>
-        <div class="container">
-            <div class="headline">
-                
+        <div class="headline">
+            <div class="headline-content">
                 <h1 class="title font-face">Transforming the informal retail to provide viable market access for farmers</h1>
                 <p class="discription font-face">GreenKart is a B2B commerce platform for farmers to sell their produce directly to informal, with shared logistics services, delivered to their market stall</p>
                 <div class="call2actions">
-                    <a class="call2actions-buttons" id="farmer" href="">I aM a farmer</a>
-                    <a class="call2actions-buttons" id="trader" href="">I aM a trader</a>
+                    <a class="call2actions-buttons" id="farmer" href="">I am a farmer</a>
+                    <a class="call2actions-buttons" id="trader" href="">I am a trader</a>
                 </div>
+            </div>
 
-                3
+            <div class="slideshow">
+                <div class="slideshow-image"></div>
+                <div class="slideshow-image"></div>
+                <div class="slideshow-image"></div>
+                <div class="slideshow-image"></div>
             </div>
         </div>
     </section>
@@ -63,29 +68,29 @@
         
 
         <div class="sli">
-            <div class="card">
-                <img src="./assets/img/SAB.jpg" class="card-img-top" alt="SAB Logo">
-                <div class="card-body">
-                    <p class="card-text">Collaborated in the SAB Ltd. Nelson Mandela Day's corporate Social Responsibility program to equip rural dwellers in Bushbuckridge Mpumalanga to start micro-farms using unutilized backyard plots in 2017.</p>
-                </div>
-                </div>
-                <div class="card"  >
-                <img src="./assets/img/EO GSEA.png" class="card-img-top" alt="EO Logo">
-                <div class="card-body">
-                    <p class="card-text">First place winner of the 2018 South African Global Student Entrepreneurship Awards (GSEA-SA) competition.</p>
-                </div>
+                <div class="card">
+                    <img src="./assets/img/SAB.jpg" class="card-img-top" alt="SAB Logo">
+                    <div class="card-body">
+                        <p class="card-text">Collaborated in the SAB Ltd. Nelson Mandela Day's corporate Social Responsibility program to equip rural dwellers in Bushbuckridge Mpumalanga to start micro-farms using unutilized backyard plots in 2017.</p>
+                    </div>
                 </div>
                 <div class="card"  >
-                <img src="./assets/img/Digital Africa.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Honoured with the Sergey Vhykodtsev award for being a resilient business that used its obstacles to grow.</p>
+                    <img src="./assets/img/EO GSEA.png" class="card-img-top" alt="EO Logo">
+                    <div class="card-body">
+                        <p class="card-text">First place winner of the 2018 South African Global Student Entrepreneurship Awards (GSEA-SA) competition.</p>
+                    </div>
                 </div>
+                <div class="card"  >
+                    <img src="./assets/img/Digital Africa.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Honoured with the Sergey Vhykodtsev award for being a resilient business that used its obstacles to grow.</p>
+                    </div>
                 </div>
                 <!-- <div class="card"  >
-                <img src="./assets/img/Digital Africa.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+                    <img src="./assets/img/Digital Africa.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div> -->
         </div>
         <div class="text-center">
@@ -108,9 +113,9 @@
                 </div>
                 
                 <ul class="service-list">
-                    <li>Get your soil sampling guidance</li>
-                    <li>Get your fertilizer recommendation</li>
-                    <li>Get your crop specific irrigation scheduling</li>
+                    <li class="list">Get your soil sampling guidance</li>
+                    <li class="list">Get your fertilizer recommendation</li>
+                    <li class="list">Get your crop specific irrigation scheduling</li>
                 </ul>
                 <div class="button">
                     <a href="#contact" class="call2actions-buttons ">Coming Soon</a>
@@ -123,8 +128,8 @@
                 </div>
                 
                 <ul class="service-list">
-                    <li>Service Traders or vendor in the informal market</li>
-                    <li>Service Small-scale farmer in search of a market</li>
+                    <li class="list">Service Traders or vendor in the informal market</li>
+                    <li class="list">Service Small-scale farmer in search of a market</li>
                     <li class="list-style-none"></li>
                 </ul>
                 <div class="button">
@@ -140,17 +145,15 @@
         <div class="heading">
             <h2 class="text-center">Feed the Future.</h2>
         </div>
-        <p class="text-center">Order Manje!</p>
-        <div class="text-center">
-            <a class="call2actions-buttons recommendation" href="#contact">Get Recomendation</a>
+        <div class="text-center recommendation-btn">
+            <a class="call2actions-buttons recommendation" href="#contact">Order Manje!</a>
         </div>
-        
     </section>
     <section class="container partners-section" id="partners">
+        <h2 class="text-left">Partners</h2>
         <div class="container h-100">
             <div class="row align-items-center h-100">
-                <div class="container rounded">
-                <h2 class="text-left">Partners</h2>
+                <div class="rounded">
                 <div class="slider">
                     <div class="logos slider-logo">
                     <img src="./assets/img/Digital Africa.png" height="auto" width="100%" alt="Digital Africa Logo" class="image">
@@ -175,13 +178,15 @@
             </div>
         <div class="dots"></div>
     </section>
+
     <section class="yellow-bg h-100">
         <div class="heading">
-            <h2 class="text-center">Desert Green Africa</h2>
+            <h2 class="text-center blend1">Desert Green Africa</h2>
         </div>
         <p class="text-center">Unlocking the agricultural value of underutilized land in Africa.</p>
     </section>
-    <section class="contact" id="contact">
+
+    <section class="contact-container" id="contact">
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="form-body">
@@ -237,7 +242,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+
+            <div class="col-md-6 col-sm-12 contact-info">
                 <div class="form-body">
                     <div class="row">
                         <div class="form-holder">
@@ -252,7 +258,8 @@
                                         <p><a href="www.desertgreen.co.za">www.desertgreen.co.za</a></p>
                     
                                     </div>
-                                    <div >
+                                    
+                                    <div class="social-media-list">
                                         <ul class="social-media">
                                             <li>
                                                 <a href=""><img width="30px" src="./assets/img/whatsapp.png" alt="whatsapp icon"></a>
@@ -286,9 +293,11 @@
                 </div>
             </div>
     </section>
+
     <footer>
         <p>All rights reserved. &copy; Desert Green</p>
     </footer>
+    
     <div id="myModal" class="modal">
 
         <!-- Modal content -->

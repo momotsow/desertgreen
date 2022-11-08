@@ -1,7 +1,7 @@
 .slideshow {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 85vh;
   overflow: hidden;
 }
 
@@ -21,30 +21,31 @@
           animation-duration: 16s;
   opacity: 1;
   transform: scale(1.2);
+  overflow-x: hidden;
 }
 .slideshow-image:nth-child(1) {
   -webkit-animation-name: kenburns-1;
           animation-name: kenburns-1;
   z-index: 3;
-  background-image: url('https://unsplash.it/1600/1400?image=492');
+  background-image: url(./assets/07.jpg);
 }
 .slideshow-image:nth-child(2) {
   -webkit-animation-name: kenburns-2;
           animation-name: kenburns-2;
   z-index: 2;
-  background-image: url('https://unsplash.it/1600/1400?image=487')
+  background-image: url(./assets/vendor.jpg)
 }
 .slideshow-image:nth-child(3) {
   -webkit-animation-name: kenburns-3;
           animation-name: kenburns-3;
   z-index: 1;
-  background-image: url('https://unsplash.it/1600/1400?image=483')
+  background-image: url(./assets/farmers.png)
 }
 .slideshow-image:nth-child(4) {
   -webkit-animation-name: kenburns-4;
           animation-name: kenburns-4;
   z-index: 0;
-  background-image: url('https://unsplash.it/1600/1400?image=478')
+  background-image: url(./assets/trucks.jpg)
 }
 
 @-webkit-keyframes kenburns-1 {
@@ -214,29 +215,30 @@
     transform: scale(1);
   }
 }
-/* h1 {
+.headline-content {
   position: absolute;
-  top: 50%;
+  top: 62%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
   z-index: 99;
   text-align: center;
-  text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(0, 37, 18, 0.75);
   box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
-  padding: 1em 2em;
-  line-height: 1.5;
+  padding: 3em 2em;
+  width: 75%;
+  height: auto;
+  color: #fff;
 }
-h1 small {
+.headline-content small {
   display: block;
   text-transform: lowercase;
   font-size: 0.7em;
 }
-h1 small:first-child {
+.headline-content small:first-child {
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   padding-bottom: 0.5em;
 }
-h1 small:last-child {
+.headline-content small:last-child {
   border-top: 1px solid rgba(0, 0, 0, 0.25);
   padding-top: 0.5em;
-} */
+}

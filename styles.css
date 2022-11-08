@@ -22,14 +22,27 @@ ul {
 }
 
 a {
-  text-decoration: none !important;
-}
-h2 {
-  font-weight: 800;
+  text-decoration: none!important;
+  color: #fff!important;
 }
 
-.about, .services, .customer-logos {
-  margin-top: 50px;
+h2 {
+  font-weight: 900!important;
+  font-size: 20px;
+  margin-bottom: 20px!important;
+}
+
+h4 {
+  font-weight: 700!important;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.discription {
+  font-size: 12px;
 }
 
 ul li.p-cta.call2action a {
@@ -44,25 +57,30 @@ ul li.p-cta.call2action a {
 
 /* banner */
 
-.mobile-menu {
-  margin-top: 20px;
-}
-
 .secondary-cta {
   background-color: #fff;
 }
 
 .secondary-cta img {
-  width: 80%;
+  width: 60%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #FFC533;
 }
 
 .p-cta {
   font-size: 30px;
   font-weight: 700;
+  padding-bottom: 10px;
 }
 
 .p-cta a {
-  color: #002512;
+  color: #002512!important;
   font-weight: 700;
   letter-spacing: 3px;
 }
@@ -83,7 +101,7 @@ ul li.p-cta.call2action a {
 .nav-list {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   left: 0;
   top: 0;
@@ -96,35 +114,19 @@ ul li.p-cta.call2action a {
   border: none;
   outline: none;
   background: none;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 100;
-  color: #272a31;
-  margin-left: 20px;
+  color: #002512;
 }
 
-.hero-section {
-  /* margin-bottom: 60px; */
-  height: 100vh;
-}
-
-.headline-img {
-  background-image: url(./assets/img/banner-01.png);
-  /* opacity: 0.2; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
+.close-menu {
+  background-color: #FFC533;
   width: 100%;
-  min-height: 100%;
-  height: auto;
-  z-index: -1;
 }
 
-.headline {
-  background-color: #002512;
-  color: #fff;
-  height: auto;
-  padding: 30px 20px;
-  margin-top: 3.5rem;
+.nav-list ul {
+  padding-left: 0;
+  margin-top: 60px;
 }
 
 .intro {
@@ -145,12 +147,13 @@ ul li.p-cta.call2action a {
   margin-bottom: 10px;
   text-align: center;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 6px;
   outline: none;
   text-transform: capitalize;
+  font-size: 12px;
 }
 
 .call2actions-buttons:hover {
@@ -160,7 +163,7 @@ ul li.p-cta.call2action a {
 }
 
 .call2actions-buttons.recommendation {
-  color: #ffffff;
+  color: #fff;
   background-color: #002512;
   border: 1px solid #002512;
 }
@@ -173,20 +176,63 @@ ul li.p-cta.call2action a {
 
 /* about */
 .text-paragraph {
-  margin: 10px 0px 0px 10px;
+  margin: 10px 0px 50px 0px;
+}
+
+.farmer-trader {
+  margin-left: 0!important;
+  margin-right: 0!important;
+  padding-top: 40px;
+}
+
+.about-gf > h4 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.our-solution {
+  padding: 40px 0 0 0!important;
+}
+
+body > section.container.farmer-trader > div:nth-child(3) > div > div > ul {
+  padding-left: 0px;
+  text-align: left!important;
 }
 
 .sli {
   display: block;
   margin-bottom: 2rem;
- 
+  margin-top: 40px;
 }
+
 .card {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-bottom: 10px;
   width: 100%;
+  padding: 20px;
 }
 
+.our-solution-list {
+  text-align: left;
+  padding: 10px 0 0 0;
+}
+
+.farmer-trader ul > li:nth-child(n) {
+  padding-bottom: 10px;
+}
+
+.gallery > h2 {
+  margin-top: 20px;
+}
+
+.team-members > div > h2 {
+  padding-top: 20px;
+}
+
+.team {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
 
 /* services */
 .greenFarm {
@@ -206,10 +252,12 @@ text-align: center;
 
 .greenFarm h3, .greenKart h3 {
 text-align: center;
+font-weight: 700;
 }
 .services ul {
 list-style: disc;
 text-align: left;
+padding-left: 45px;
 }
 
 .service-list {
@@ -228,6 +276,7 @@ text-align: left;
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  padding: 0!important;
 }
 
 .form-holder .form-content {
@@ -258,10 +307,10 @@ text-align: left;
 .logos {
   width: 100%;
   display: inline-block;
-  margin: 3rem 0;
+  margin: 0 0 1rem 0;
 }
 .image {
-  width: calc(100% / 5);
+  width: calc(100% / 2);
   animation: fade-in 0.5s 
     cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
@@ -288,10 +337,13 @@ text-align: left;
   background-color: #FFC533;
   padding: 10px 20px;
 }
+
+.yellow-bg .blend1 {
+  mix-blend-mode: overlay;
+}
+
 .yellow-bg .heading h2 {
   font-size: 3rem;
-  font-weight: bolder;
-  letter-spacing: 3px;
 }
 .yellow-bg .heading p {
   font-size: 1.5rem;
@@ -301,15 +353,19 @@ text-align: left;
 
 .soil .heading h2 {
   font-size: 3rem;
-  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 0!important;
+}
+
+.recommendation-btn {
+  margin-top: 40px;
 }
 
 
 .form-content .form-items {
 /* border: 3px solid #fff; */
-padding: 20px;
+padding: 20px 0 20px 0;
 display: inline-block;
-width: 75%;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
@@ -322,7 +378,7 @@ z-index: 2;
 .form-content h3 {
 color: #fff;
 text-align: left;
-font-size: 28px;
+font-size: 20px;
 font-weight: 600;
 margin-bottom: 5px;
 }
@@ -331,13 +387,20 @@ margin-bottom: 5px;
 margin-bottom: 30px;
 }
 
+.contact > h4 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.address > h4 {
+  margin-bottom: 20px;
+}
+
 .form-content p {
 color: #fff;
 text-align: left;
-font-size: 17px;
+font-size: 12px;
 font-weight: 300;
-line-height: 20px;
-margin-bottom: 30px;
 }
 
 
@@ -413,9 +476,16 @@ color: #ff606e;
 color: #2acc80;
 }
 
-.contact {
+.contact-container {
   background-color: #002512;
   color: #ffffff;
+}
+
+.row {
+  margin-left: 0!important;
+  margin-right: 0!important;
+  padding-left: 0!important;
+  padding-right: 0!important;
 }
 
 .contact a {
@@ -425,7 +495,11 @@ color: #2acc80;
   display: flex;
   padding-left: 0;
   align-items: center;
+}
 
+.social-media-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .social-media li {
@@ -436,11 +510,12 @@ color: #2acc80;
   background-image: url(./assets/img/logo-favicon.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
   height: 300px;
-  width: 220px;
+  width: 217px;
   z-index: 0;
-  opacity: 0.6;
+  opacity: 0.16;
+  margin-top: -300px;
+  align-self: end;
 }
 
 .carrot {
@@ -459,8 +534,8 @@ color: #2acc80;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  height: 300px;
-  width: 246px;
+  height: 310px;
+  width: 300px;
   z-index: -1;
 }
 
@@ -473,25 +548,28 @@ color: #2acc80;
   width: 246px;
   z-index: -1;
   margin-top: -160px;
-  right: -10px;
+  right: 0;
 }
 
 footer {
   text-align: center;
+  padding-top: 15px;
+}
+
+.contact-info {
+  padding: 0!important;
+  margin: 0!important;
 }
 
 .team-members {
   margin: 20px 0px 20px 0px;
 }
 
-.team-v11 .team {
-  height: 450px;
-}
-
 /* about page */
 
 .about {
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
+  margin-top: 92vh;
 }
 .about-list {
   list-style: disc;
@@ -501,7 +579,7 @@ footer {
 img {vertical-align: middle;}
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -569,12 +647,19 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 768px){
+  .h2, h2 {
+    font-size: calc(2rem + .9vw)!important;
+  }
   .secondary-cta img {
-    width: 300px;
-}
+    width: 255px;
+  }
   .hero-section {
     margin-bottom: 0;
+  }
+
+  .close-menu {
+    display: none;
   }
 
   .logo {
@@ -594,7 +679,6 @@ img {vertical-align: middle;}
     align-items: center;
     justify-content: center;
     background: #fff;
-    padding: 10px 0 10px 0;
   }
 
   .second-cta {
@@ -613,9 +697,11 @@ img {vertical-align: middle;}
   }
 
   .p-cta {
-    font-size: 15px;
-    font-weight: 500;
-    margin-left: 30px;
+    font-size: 16px;
+    margin-left: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 0;
   }
 
   .secondary-cta ul li a {
@@ -648,7 +734,7 @@ img {vertical-align: middle;}
     display: flex;
     width: 100%;
     background: unset;
-    height: 10vh;
+    height: 5vh;
     position: unset;
     align-items: center;
     justify-content: center;
@@ -669,25 +755,22 @@ img {vertical-align: middle;}
     font-size: 30px;
   }
 
-  .headline {
-    background-color: #002512;
-    color: #fff;
-    width: 70%;
-    height: auto;
-    padding: 30px 20px;
-    margin-top: 1rem;
-    
-  }
-
   .headline .title {
-    margin: 0;
     position: relative;
     z-index: 1;
+    font-size: 2rem;
   }
 
   .discription {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+
+  .call2actions-buttons {
+    font-size: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 
   .carrot {
@@ -697,12 +780,36 @@ img {vertical-align: middle;}
     right: 0;
   }
 
+  #contact {
+    padding-top: 30px;
+  }
+
+  .list {
+    margin-bottom: 8px;
+  }
+
+  .image {
+    width: calc(100% / 5);
+  }
+
+  .form-content h3 {
+    font-size: 2rem;
+  }
+
+  .contact > h4 {
+    font-size: 2rem;
+  }
+
+  .form-content p {
+    font-size: 16px;
+  }
+
   .logo-location {
-    height: 300px;
-    width: 220px;
+    height: 442px;
+    width: 320px;
     z-index: 0;
     opacity: 0.6;
-    margin-top: 100px;
+    margin-top: -264px;
   }
 
   .sli {
@@ -716,228 +823,82 @@ img {vertical-align: middle;}
   }
 
   .sli .card {
-    width: 14rem;
+    width: 32%;
   }
   .slider-logo {
-    margin-right: 18rem;
+    margin-right: 13rem;
   }
   .soil .heading h2 {
-    font-size: 2.9rem;
-    margin: 4rem 10rem;
+    font-size: 4.9rem!important;
+    margin: 4rem 0 0 0;
   }
     
   .yellow-bg {
     padding: 10px 100px;
   }
-  .yellow-bg .heading h2 {
-    font-size: 2.9rem;
+  .yellow-bg .heading .blend1 {
+    font-size: 4.4rem!important;
     font-weight: bolder;
     letter-spacing: 5px;
   }
-}
 
-  @media only screen and (min-width: 1025px) {
-    .secondary-cta img {
-      width: 300px;
-  }
-    .hero-section {
-      margin-bottom: 0;
-    }
-  
-    .logo {
-      display: flex;
-      margin-bottom: 0;
-      font-size: 25px;
-      font-weight: 700;
-    }
-  
-    nav {
-      display: flex;
-      align-items: center;
-    }
-  
-    .secondary-cta {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
-      padding: 10px 0 10px 0;
-    }
-  
-    .second-cta {
-      display: flex;
-      padding-left: 0;
-      margin-bottom: 0;
-      justify-content: right;
-    }
-  
-    .s-list {
-      margin-right: 30px;
-    }
-  
-    header {
-      background: #FFC533
-    }
-  
-    .p-cta {
-      font-size: 18px;
-      font-weight: 500;
-      margin-left: 30px;
-    }
-  
-    .secondary-cta ul li a {
-      color: #fff !important;
-    }
-  
-    ul li.p-cta.call2action a {
-      color: #fff !important;
-    }
-  
-    .nav-list > ul li a:hover,
-    .nav-list > ul li a:active {
-      font-weight: 600;
-      color: #fff!important;
-    }
-  
-    .mobile-menu {
-      display: none;
-    }
-  
-    #more {
-      display: flex !important;
-    }
-  
-    ul {
-      margin-top: unset !important;
-    }
-  
-    .nav-list {
-      display: flex;
-      width: 100%;
-      background: unset;
-      height: 10vh;
-      position: unset;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .nav-list ul {
-      display: flex;
-      margin-bottom: 0 !important;
-      padding-left: 0 !important;
-      align-items: center;
-    }
-  
-    #mobile-exit {
-      display: none;
-    }
-  
-    .intro {
-      font-size: 30px;
-    }
-  
-    .headline {
-      background-color: #002512;
-      color: #fff;
-      width: 70%;
-      height: auto;
-      padding: 30px 20px;
-      margin-top: 1rem;
-      
-    }
-
-    .headline .title {
-      margin: 0;
-      position: relative;
-      z-index: 1;
-    }
-
-    .discription {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    .carrot {
-      height: 300px;
-      width: 220px;
-      z-index: -1;
-      right: 0;
-    }
-
-    .logo-location {
-      height: 300px;
-      width: 220px;
-      z-index: 0;
-      opacity: 0.6;
-      margin-top: 100px;
-    }
-
-    .sli {
-      display: flex;
-      align-content: space-around;
-      justify-content: space-around;
-      flex-direction: row;
-      flex-wrap: wrap;
-      min-width: 100%;
-      overflow-x: auto;
-    }
-
-    .sli .card {
-      width: 18rem;
-    }
-    .slider-logo {
-      margin-right: 18rem;
-    }
-    .soil .heading h2 {
-      font-size: 4rem;
-      margin: 4rem 10rem 2rem 10rem;
-    }
-      
-    .yellow-bg {
-      padding: 10px 100px;
-    }
-    .yellow-bg .heading h2 {
-      font-size: 5rem;
-      font-weight: bolder;
-      letter-spacing: 5px;
-    }
+  .form-content .form-items {
+    width: 100%;
+    padding-left: 25px;
   }
 
-  /* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  /* about */
+
+  .about-gf {
+    padding-left: 50px!important;
+  }
 }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
+@media only screen and (min-width: 1025px) {
+  p {
+    font-size: 20px;
+  }
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
+  .headline .title {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+  .discription {
+    margin-top: 24px;
+    margin-bottom: 45px;
+    font-size: 20px;
+  }
+
+  .services ul {
+    font-size: 20px;
+    padding-left: 85px;
+  }
+
+  .soil .heading h2 {
+    font-size: 6rem!important;
+  }
+
+  .container.soil > p {
+    font-size: 28px;
+  }
+
+  .yellow-bg .heading .blend1 {
+    font-size: 6.4rem!important;
+    letter-spacing: 10px;
+  }
+
+  .yellow-bg.h-100 > p {
+    font-size: 28px;
+  }
+
+  .form-content .form-items {
+    padding-left: 6%;
+  }
+
+  .logo-location {
+    height: 521px;
+    width: 380px;
+    margin-top: -500px;
+  }
 }
