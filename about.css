@@ -128,13 +128,14 @@
     .row-1 section .icon{
       left: -60px;
     }
-  }
-  @media(max-width: 440px){
     .wrapper .center-line,
     .row section::before,
     .row section .icon{
       display: none;
     }
+  }
+  @media(max-width: 440px){
+    
     .wrapper .row{
       margin: 10px 0;
     }
