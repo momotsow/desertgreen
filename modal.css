@@ -1,0 +1,51 @@
+#modal-overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    overflow-y: scroll;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  #modal-overlay #modal {
+    max-width: 750px;
+    width: 100%;
+    background: white;  
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    z-index: 99;
+  }
+  
+  #modal-overlay #modal .modal-footer {
+    margin-top: auto;
+  }
+
+  #modal-overlay2 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+  
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  #modal-overlay2 #modal {
+    max-width: 750px;
+    width: 100%;
+    background: white;  
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    z-index: 99;
+  }
+  
+  #modal-overlay2 #modal .modal-footer {
+    margin-top: auto;
+  }
+
+  modal-content {
+    color: black;
+  }
