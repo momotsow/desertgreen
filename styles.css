@@ -66,7 +66,7 @@ ul li.p-cta.call2action a {
   background-color: #fff;
 }
 
-.secondary-cta img {
+#logo {
   width: 60%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -575,7 +575,7 @@ footer {
 
 .about {
   margin-bottom: 50px;
-  margin-top: 92vh;
+  padding-top: 85vh;
 }
 .about-list {
   list-style: disc;
@@ -657,9 +657,27 @@ img {vertical-align: middle;}
   .h2, h2 {
     font-size: calc(2rem + .9vw)!important;
   }
-  .secondary-cta img {
+  /* .secondary-cta img {
     width: 255px;
+  } */
+
+  .header-section {
+    height: fit-content;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 999;
+    width: 100%;
+    transition: 0.9s;
   }
+
+  #logo {
+    background-color: white;
+    width: 80%;
+  }  
+
   .hero-section {
     margin-bottom: 0;
   }
@@ -784,6 +802,7 @@ img {vertical-align: middle;}
     width: 220px;
     z-index: -1;
     right: 0;
+    top: 115vh;
   }
 
   #contact {

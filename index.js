@@ -15,3 +15,12 @@ mobileBtnExit.addEventListener('click', () => {
 nav.addEventListener('click', () => {
   nav.classList.remove('menu-btn');
 });
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("logo").style.width = "60%";
+  } else {
+    document.getElementById("logo").style.width = "80%";
+  }
+};
+
