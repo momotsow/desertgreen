@@ -383,7 +383,7 @@ transition: all 0.4s ease;
 z-index: 2;
 }
 
-.form-content h3 {
+.form-content h3, .form-content h4{
 color: #fff;
 text-align: left;
 font-size: 20px;
@@ -398,6 +398,7 @@ margin-bottom: 30px;
 .contact > h4 {
   margin-bottom: 20px;
   font-weight: 700;
+  color: #fff
 }
 
 .address > h4 {
@@ -562,6 +563,7 @@ color: #2acc80;
 footer {
   text-align: center;
   padding-top: 15px;
+  color: #fff;
 }
 
 .contact-info {

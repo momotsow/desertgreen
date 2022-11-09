@@ -21,6 +21,7 @@ option {
     max-width: 800px;
     width: 100%;
     background: white;  
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
     padding:10px;
@@ -46,6 +47,7 @@ option {
     max-width: 800px;
     width: 100%;
     background: white;  
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
     padding:10px;
