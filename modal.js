@@ -6,9 +6,11 @@ const modalWindowOverlayTrader = document.getElementById("modal-overlay2");
 
 const showModalWindow = () => {
   modalWindowOverlay.style.display = 'flex';
+  modalWindowOverlayTrader.style.display = 'none';
 }
 const showModalWindowtrader = () => {
     modalWindowOverlayTrader.style.display = 'flex';
+    modalWindowOverlay.style.display = 'none';
 }
 openModalButton.addEventListener("click", showModalWindow);
 openButtonTrader.addEventListener("click", showModalWindowtrader);
