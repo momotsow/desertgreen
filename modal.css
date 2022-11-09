@@ -11,7 +11,7 @@ option {
     height: 100vh;
     position: absolute;
     background: rgba(0, 0, 0, 0.7);
-    overflow-y: scroll;
+    
     display: none;
     align-items: center;
     justify-content: center;
@@ -25,6 +25,7 @@ option {
     flex-direction: column;
     padding:10px;
     z-index: 99;
+    overflow-y: scroll;
   }
   
   #modal-overlay #modal .modal-footer {
@@ -49,6 +50,7 @@ option {
     flex-direction: column;
     padding:10px;
     z-index: 99;
+    overflow-y: scroll;
   }
   
   #modal-overlay2 #modal .modal-footer {
@@ -80,4 +82,15 @@ option {
     color: #002512;
     background-color: #FFC533;
     border: none;
+  }
+
+  @media(max-width: 790px){
+    #modal-overlay #modal {
+      max-width: 750px;
+    }
+  }
+  @media(max-width: 440px){
+    #modal-overlay #modal {
+      max-width: 350px;
+    }
   }
