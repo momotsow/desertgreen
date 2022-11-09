@@ -6,60 +6,48 @@
 option {
   width: 100%;
 }
-#modal-overlay {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
+#modal-overlay, #modal-overlay2  {
+    /* width: 100%; */
+    /* height: 100vh; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
     background: rgba(0, 0, 0, 0.7);
-    
     display: none;
     align-items: center;
     justify-content: center;
     z-index: 999;
+    opacity: 1;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
   }
-  #modal-overlay #modal {
+  #modal-overlay #modal, #modal-overlay2 #modal {
     max-width: 800px;
     width: 100%;
+    position: relative;
     background: white;  
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
+    position: fixed;
     padding:10px;
-    z-index: 99;
-    overflow-y: scroll;
-  }
-  
-  #modal-overlay #modal .modal-footer {
-    margin-top: auto;
-  }
-
-  #modal-overlay2 {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.7);
     z-index: 999;
-    display: none;
-    align-items: center;
-    justify-content: center;
-  }
-  #modal-overlay2 #modal {
-    max-width: 800px;
-    width: 100%;
-    background: white;  
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    flex-direction: column;
-    padding:10px;
-    z-index: 99;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
   
-  #modal-overlay2 #modal .modal-footer {
+  #modal-overlay #modal .modal-footer, #modal-overlay2 #modal .modal-footer {
     margin-top: auto;
   }
 
-  modal-content {
+  .modal-header {
+    margin: auto;
+  }
+
+  .modal-content {
     color: black;
   }
   .modal-footer .form-button {
@@ -87,12 +75,72 @@ option {
   }
 
   @media(max-width: 790px){
-    #modal-overlay #modal {
+    #modal-overlay #modal, #modal-overlay2 #modal {
       max-width: 750px;
+      top: 0;
+      bottom: 0;
     }
   }
   @media(max-width: 440px){
-    #modal-overlay #modal {
+    #modal-overlay #modal, #modal-overlay2 #modal {
       max-width: 350px;
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background-image: url(./assets/img/carrot-mobile.svg);
+    background-color: #FFC533;
+    border-radius: 5px;
+    width: 80%;
+    position: relative;
+    z-index: 999;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #002512;
+  }
+
+  .close {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #002512 !important;
+  }
+  
+  .popup .content {
+    max-height: 80%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
     }
   }
