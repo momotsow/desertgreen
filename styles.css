@@ -44,10 +44,12 @@ h4 {
 .title {
   font-size: 22px;
   font-weight: 700;
+  color: #fff;
 }
 
 .discription {
   font-size: 12px;
+  color: #fff;
 }
 
 ul li.p-cta.call2action a {
@@ -668,7 +670,7 @@ img {vertical-align: middle;}
     right: 0px;
     left: 0px;
     bottom: 0px;
-    z-index: 999;
+    z-index: 600;
     width: 100%;
     transition: 0.9s;
   }
