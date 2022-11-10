@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="hero.css">
-    
+
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -34,18 +34,18 @@
                     <div class="form-holderZ">
                         <div class="form-contentZ">
                             <div class="form-itemsZ">
-                                <form class="requires-validation" id="contactForm" action="tradermodal.php" method="post">
+                                <form class="requires-validation" id="FarmForm" action="tradermodal.php" method="post">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <select class="form-select mt-3" id="farmer" name="farmer" >
+                                            <select class="form-select mt-3" id="farmers" name="farmer">
                                                 <option selected disabled value="farmer">Farmer</option>
 
                                             </select>
                                         </div>
 
                                         <div class="col-md-6">
-                                            <input class="form-control mt-3" type="text" id="name" name="name" placeholder="Full Name"
-                                                required>
+                                            <input class="form-control mt-3" type="text" id="name" name="name"
+                                                placeholder="Full Name" required>
                                             <div class="valid-feedback">Full name field is valid!</div>
                                             <div class="invalid-feedback">Full name field cannot be blank!</div>
                                         </div>
@@ -86,7 +86,8 @@
                                             <div class="invalid-feedback">Farm Owner cannot be blank!</div>
                                         </div>
                                         <div class="col-md-12">
-                                            <textarea name="additional" id="additional" cols="30" rows="5" class="form-control mt-3"
+                                            <textarea name="additional" id="additional" cols="30" rows="5"
+                                                class="form-control mt-3"
                                                 placeholder="Additional Information"></textarea>
                                         </div>
                                         <div class="col-md-12">
@@ -95,86 +96,86 @@
                                                     <legend id="crops" class="desc">
                                                         Please select your crops
                                                     </legend>
-                                                        <div class="row">
-                                                            <div class="col-md-3 col-sm-6">
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Beetroot" tabindex="8">
-                                                                    <label class="choice" for="">Beetroot</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Butternut" tabindex="9">
-                                                                    <label class="choice" for="">Butternut</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Cabbage" tabindex="10">
-                                                                    <label class="choice" for="">Cabbage</label>
-                                                                    </span>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Hubbard Squash" tabindex="10">
-                                                                    <label class="choice" for="">Hubbard Squash</label>
-                                                                    </span>
-                                                                </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Beetroot" tabindex="8">
+                                                                <label class="choice" for="">Beetroot</label>
                                                             </div>
-                                                            <div class="col-md-3 col-sm-6">
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Red Pepper" tabindex="8">
-                                                                    <label class="choice" for="">Red Pepper</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Green Pepper" tabindex="9">
-                                                                    <label class="choice" for="">Green Pepper</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Yellow Pepper" tabindex="10">
-                                                                    <label class="choice" for="">Yellow Pepper</label>
-                                                                    </span>
-                                                                </div>
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Butternut" tabindex="9">
+                                                                <label class="choice" for="">Butternut</label>
                                                             </div>
-                                                            <div class="col-md-3 col-sm-6">
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Onion" tabindex="8">
-                                                                    <label class="choice" for="">Onion</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Potato" tabindex="9">
-                                                                    <label class="choice" for="">Potato</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Pumpkin" tabindex="10">
-                                                                    <label class="choice" for="">Pumpkin</label>
-                                                                    </span>
-                                                                </div>
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Cabbage" tabindex="10">
+                                                                <label class="choice" for="">Cabbage</label>
+                                                                </span>
                                                             </div>
-                                                            <div class="col-md-3 col-sm-6">
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Spinach" tabindex="8">
-                                                                    <label class="choice" for="">Spinach</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Tomato" tabindex="9">
-                                                                    <label class="choice" for="">Tomato</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="" name="crops[]" type="checkbox"
-                                                                        value="Carrot" tabindex="10">
-                                                                    <label class="choice" for="">Carrot</label>
-                                                                    </span>
-                                                                </div>
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Hubbard Squash" tabindex="10">
+                                                                <label class="choice" for="">Hubbard Squash</label>
+                                                                </span>
                                                             </div>
                                                         </div>
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Red Pepper" tabindex="8">
+                                                                <label class="choice" for="">Red Pepper</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Green Pepper" tabindex="9">
+                                                                <label class="choice" for="">Green Pepper</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Yellow Pepper" tabindex="10">
+                                                                <label class="choice" for="">Yellow Pepper</label>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Onion" tabindex="8">
+                                                                <label class="choice" for="">Onion</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Potato" tabindex="9">
+                                                                <label class="choice" for="">Potato</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Pumpkin" tabindex="10">
+                                                                <label class="choice" for="">Pumpkin</label>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Spinach" tabindex="8">
+                                                                <label class="choice" for="">Spinach</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Tomato" tabindex="9">
+                                                                <label class="choice" for="">Tomato</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="" name="crops[]" type="checkbox"
+                                                                    value="Carrot" tabindex="10">
+                                                                <label class="choice" for="">Carrot</label>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </fieldset>
                                             </div>
                                         </div>
@@ -199,7 +200,7 @@
             <div class="text-right">
                 <a id="close-modal2" class="close" href="#">X</a>
             </div>
-            
+
             <div class="modal-header">
                 <h3>Register on our platform</h3>
             </div>
@@ -218,8 +219,8 @@
                                         </div>
 
                                         <div class="col-md-6">
-                                            <input class="form-control mt-3" type="text" name="name" placeholder="Full Name"
-                                                required>
+                                            <input class="form-control mt-3" type="text" name="name"
+                                                placeholder="Full Name" required>
                                             <div class="valid-feedback">Full name field is valid!</div>
                                             <div class="invalid-feedback">Full name field cannot be blank!</div>
                                         </div>
@@ -250,7 +251,8 @@
                                             </select>
                                         </div>
                                         <div class="col-md-12">
-                                            <textarea name="Additional" id="" cols="30" rows="5" class="form-control mt-3"
+                                            <textarea name="Additional" id="" cols="30" rows="5"
+                                                class="form-control mt-3"
                                                 placeholder="Additional Information"></textarea>
                                         </div>
                                         <div class="col-md-12">
@@ -259,86 +261,87 @@
                                                     <legend id="title6" class="desc">
                                                         Please select your crops
                                                     </legend>
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <div>
-                                                                    <input id="Field6" name="Field6" type="checkbox"
-                                                                        value="Beetroot" tabindex="8">
-                                                                    <label class="choice" for="Field6">Beetroot</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="Field7" name="Field7" type="checkbox"
-                                                                        value="Butternut" tabindex="9">
-                                                                    <label class="choice" for="Field7">Butternut</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="Field8" name="Field8" type="checkbox"
-                                                                        value="Cabbage" tabindex="10">
-                                                                    <label class="choice" for="Field8">Cabbage</label>
-                                                                    </span>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="Field8" name="Field8" type="checkbox"
-                                                                        value="Hubbard Squash" tabindex="10">
-                                                                    <label class="choice" for="Field8">Hubbard Squash</label>
-                                                                    </span>
-                                                                </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div>
+                                                                <input id="Field6" name="Field6" type="checkbox"
+                                                                    value="Beetroot" tabindex="8">
+                                                                <label class="choice" for="Field6">Beetroot</label>
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <div>
-                                                                    <input id="Field6" name="Field6" type="checkbox"
-                                                                        value="Red Pepper" tabindex="8">
-                                                                    <label class="choice" for="Field6">Red Pepper</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="Field7" name="Field7" type="checkbox"
-                                                                        value="Green Pepper" tabindex="9">
-                                                                    <label class="choice" for="Field7">Green Pepper</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="Field8" name="Field8" type="checkbox"
-                                                                        value="Yellow Pepper" tabindex="10">
-                                                                    <label class="choice" for="Field8">Yellow Pepper</label>
-                                                                    </span>
-                                                                </div>
+                                                            <div>
+                                                                <input id="Field7" name="Field7" type="checkbox"
+                                                                    value="Butternut" tabindex="9">
+                                                                <label class="choice" for="Field7">Butternut</label>
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <div>
-                                                                    <input id="Field6" name="Field6" type="checkbox"
-                                                                        value="Onion" tabindex="8">
-                                                                    <label class="choice" for="Field6">Onion</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="Field7" name="Field7" type="checkbox"
-                                                                        value="Potato" tabindex="9">
-                                                                    <label class="choice" for="Field7">Potato</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="Field8" name="Field8" type="checkbox"
-                                                                        value="Pumpkin" tabindex="10">
-                                                                    <label class="choice" for="Field8">Pumpkin</label>
-                                                                    </span>
-                                                                </div>
+                                                            <div>
+                                                                <input id="Field8" name="Field8" type="checkbox"
+                                                                    value="Cabbage" tabindex="10">
+                                                                <label class="choice" for="Field8">Cabbage</label>
+                                                                </span>
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <div>
-                                                                    <input id="Field6" name="Field6" type="checkbox"
-                                                                        value="Spinach" tabindex="8">
-                                                                    <label class="choice" for="Field6">Spinach</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="Field7" name="Field7" type="checkbox"
-                                                                        value="Tomato" tabindex="9">
-                                                                    <label class="choice" for="Field7">Tomato</label>
-                                                                </div>
-                                                                <div>
-                                                                    <input id="Field8" name="Field8" type="checkbox"
-                                                                        value="Carrot" tabindex="10">
-                                                                    <label class="choice" for="Field8">Carrot</label>
-                                                                    </span>
-                                                                </div>
+                                                            <div>
+                                                                <input id="Field8" name="Field8" type="checkbox"
+                                                                    value="Hubbard Squash" tabindex="10">
+                                                                <label class="choice" for="Field8">Hubbard
+                                                                    Squash</label>
+                                                                </span>
                                                             </div>
                                                         </div>
+                                                        <div class="col-md-3">
+                                                            <div>
+                                                                <input id="Field6" name="Field6" type="checkbox"
+                                                                    value="Red Pepper" tabindex="8">
+                                                                <label class="choice" for="Field6">Red Pepper</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="Field7" name="Field7" type="checkbox"
+                                                                    value="Green Pepper" tabindex="9">
+                                                                <label class="choice" for="Field7">Green Pepper</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="Field8" name="Field8" type="checkbox"
+                                                                    value="Yellow Pepper" tabindex="10">
+                                                                <label class="choice" for="Field8">Yellow Pepper</label>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div>
+                                                                <input id="Field6" name="Field6" type="checkbox"
+                                                                    value="Onion" tabindex="8">
+                                                                <label class="choice" for="Field6">Onion</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="Field7" name="Field7" type="checkbox"
+                                                                    value="Potato" tabindex="9">
+                                                                <label class="choice" for="Field7">Potato</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="Field8" name="Field8" type="checkbox"
+                                                                    value="Pumpkin" tabindex="10">
+                                                                <label class="choice" for="Field8">Pumpkin</label>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div>
+                                                                <input id="Field6" name="Field6" type="checkbox"
+                                                                    value="Spinach" tabindex="8">
+                                                                <label class="choice" for="Field6">Spinach</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="Field7" name="Field7" type="checkbox"
+                                                                    value="Tomato" tabindex="9">
+                                                                <label class="choice" for="Field7">Tomato</label>
+                                                            </div>
+                                                            <div>
+                                                                <input id="Field8" name="Field8" type="checkbox"
+                                                                    value="Carrot" tabindex="10">
+                                                                <label class="choice" for="Field8">Carrot</label>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </fieldset>
                                             </div>
                                         </div>
@@ -389,10 +392,13 @@
     <section class="hero-section">
         <div class="headline">
             <div class="headline-content">
-                <h1 class="title font-face">Transforming the informal retail to provide viable market access for farmers</h1>
-                <p class="discription font-face">GreenKart is a B2B commerce platform for farmers to sell their produce directly to informal, with shared logistics services, delivered to their market stall</p>
+                <h1 class="title font-face">Transforming the informal retail to provide viable market access for farmers
+                </h1>
+                <p class="discription font-face">GreenKart is a B2B commerce platform for farmers to sell their produce
+                    directly to informal, with shared logistics services, delivered to their market stall</p>
                 <div class="call2actions">
-                    <a class="call2actions-buttons" data-toggle="modal" data-target="#modal-overlay" id="farmer">I am a farmer</a>
+                    <a class="call2actions-buttons" data-toggle="modal" id="farmer">I am a
+                        farmer</a>
                     <a class="call2actions-buttons myBtn-multi" data-toggle="modal" id="trader">I am a trader</a>
                 </div>
             </div>
@@ -480,7 +486,7 @@
                     <li class="list">Market access</li>
                 </ul>
                 <div class="button">
-                    <a  href="#popup1" class="call2actions-buttons">Coming Soon</a>
+                    <a href="#popup1" class="call2actions-buttons">Coming Soon</a>
                 </div>
 
             </div>
@@ -495,7 +501,8 @@
                     <li class="list">Free Delivery in 24 hours</li>
                 </ul>
                 <div class="button">
-                    <a href="https://wa.me/+27680688117?text=Hello%20Farmer%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A" target="_blank" class="call2actions-buttons button">Register</a>
+                    <a href="https://wa.me/+27680688117?text=Hello%20Farmer%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A"
+                        target="_blank" class="call2actions-buttons button">Register</a>
                 </div>
             </div>
         </div>
@@ -507,7 +514,9 @@
             <h2 class="text-center">Feed the Future.</h2>
         </div>
         <div class="text-center recommendation-btn">
-            <a class="call2actions-buttons recommendation" href="https://wa.me/+27680688117?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A" target="_blank">Order Manje!</a>
+            <a class="call2actions-buttons recommendation"
+                href="https://wa.me/+27680688117?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A"
+                target="_blank">Order Manje!</a>
         </div>
 
     </section>
@@ -516,28 +525,36 @@
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="rounded">
-                <div class="slider">
-                    <div class="logos slider-logo">
-                    <img src="./assets/img/Digital Africa.png" height="auto" width="100%" alt="Digital Africa Logo" class="image">
-                    <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo" class="image">
-                    <img src="./assets/img/UP.jpg" height="auto" width="100%" alt="University of Pretoria Logo" class="image">
-                    <img src="./assets/img/SAB.jpg" height="auto" width="100%" alt="SAB Logo" class="image">
-                    <img src="./assets/img/The Tony Elemelu.png" height="auto" width="100%" alt="Tony Elemelu Logo" class="image">
-                    <img src="./assets/img/1000.jpg" height="auto" width="100%" alt="1000 Logo" class="image">
-                    </div>
-                    <div class="logos">
-                    <img src="./assets/img/Digital Africa.png" height="auto" width="100%" alt="Digital Africa Logo" class="image">
-                    <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo" class="image">
-                    <img src="./assets/img/UP.jpg" height="auto" width="100%" alt="University of Pretoria Logo" class="image">
-                    <img src="./assets/img/SAB.jpg" height="auto" width="100%" alt="SAB Logo" class="image">
-                    <img src="./assets/img/The Tony Elemelu.png" height="auto" width="100%" alt="Tony Elemelu Logo" class="image">
-                    <img src="./assets/img/1000.jpg" height="auto" width="100%" alt="1000 Logo" class="image">
+                    <div class="slider">
+                        <div class="logos slider-logo">
+                            <img src="./assets/img/Digital Africa.png" height="auto" width="100%"
+                                alt="Digital Africa Logo" class="image">
+                            <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo"
+                                class="image">
+                            <img src="./assets/img/UP.jpg" height="auto" width="100%" alt="University of Pretoria Logo"
+                                class="image">
+                            <img src="./assets/img/SAB.jpg" height="auto" width="100%" alt="SAB Logo" class="image">
+                            <img src="./assets/img/The Tony Elemelu.png" height="auto" width="100%"
+                                alt="Tony Elemelu Logo" class="image">
+                            <img src="./assets/img/1000.jpg" height="auto" width="100%" alt="1000 Logo" class="image">
+                        </div>
+                        <div class="logos">
+                            <img src="./assets/img/Digital Africa.png" height="auto" width="100%"
+                                alt="Digital Africa Logo" class="image">
+                            <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo"
+                                class="image">
+                            <img src="./assets/img/UP.jpg" height="auto" width="100%" alt="University of Pretoria Logo"
+                                class="image">
+                            <img src="./assets/img/SAB.jpg" height="auto" width="100%" alt="SAB Logo" class="image">
+                            <img src="./assets/img/The Tony Elemelu.png" height="auto" width="100%"
+                                alt="Tony Elemelu Logo" class="image">
+                            <img src="./assets/img/1000.jpg" height="auto" width="100%" alt="1000 Logo" class="image">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
-        <div class="dots"></div>
+            </div>
+            <div class="dots"></div>
     </section>
 
     <section class="yellow-bg h-100">
@@ -588,7 +605,8 @@
                                                 <option value="Geo-Trading">Geo-Trading</option>
                                                 <option value="Whatsapp Chatbot">Whatsapp Chatbot</option>
                                                 <option value="Buy-Now-Pay-Later">Buy-Now-Pay-Later</option>
-                                                <option value="Free Delivery in 24 hours">Free Delivery in 24 hours</option>
+                                                <option value="Free Delivery in 24 hours">Free Delivery in 24 hours
+                                                </option>
                                             </select>
                                             <div class="valid-feedback">You selected a service!</div>
                                             <div class="invalid-feedback">Please select a service!</div>
@@ -624,35 +642,41 @@
                                         <p><a href="www.desertgreen.co.za">www.desertgreen.co.za</a></p>
 
                                     </div>
-                                    
+
                                     <div class="social-media-list">
                                         <ul class="social-media">
                                             <li>
-                                                <a href="https://wa.me/+27680688117?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A" target="_blank"><img width="30px" src="./assets/img/whatsapp.png"
+                                                <a href="https://wa.me/+27680688117?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A"
+                                                    target="_blank"><img width="30px" src="./assets/img/whatsapp.png"
                                                         alt="whatsapp icon"></a>
                                             </li>
                                             <li>
-                                                <a href="https://www.linkedin.com/company/desert-green-africa/" target="_blank"><img
-                                                        width="30px" src="./assets/img/linkedin.svg"
+                                                <a href="https://www.linkedin.com/company/desert-green-africa/"
+                                                    target="_blank"><img width="30px" src="./assets/img/linkedin.svg"
                                                         alt="twitter icon"></a>
                                             </li>
                                             <li>
-                                                <a href=""><img width="20px" src="./assets/img/facebook.png" target="_blank"
-                                                        alt="facebook icon"></a>
+                                                <a href=""><img width="20px" src="./assets/img/facebook.png"
+                                                        target="_blank" alt="facebook icon"></a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="address">
                                         <h4>Address</h4>
-                                        <p><a href="http://maps.google.com/?q=137 West St, Sandown, Sandton, 2031" target="_blank">137
+                                        <p><a href="http://maps.google.com/?q=137 West St, Sandown, Sandton, 2031"
+                                                target="_blank">137
                                                 West Street Sandton, Johannesburg</a></p>
                                     </div>
                                     <div>
                                         <h4>Our Service</h4>
-                                        <p><a href="https://wa.me/+27673428394?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A" target="_blank">Geo-Trading</a></p>
-                                        <p><a href="https://wa.me/+27673428394?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A" target="_blank">Whatsapp Chatbot</a></p>
-                                        <p><a href="https://wa.me/+27673428394?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A" target="_blank">Buy-Now-Pay-Later</a></p>
-                                        <p><a href="https://wa.me/+27673428394?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A" target="_blank">Free Delivery in 24 hours</a></p>
+                                        <p><a href="https://wa.me/+27673428394?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A"
+                                                target="_blank">Geo-Trading</a></p>
+                                        <p><a href="https://wa.me/+27673428394?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A"
+                                                target="_blank">Whatsapp Chatbot</a></p>
+                                        <p><a href="https://wa.me/+27673428394?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A"
+                                                target="_blank">Buy-Now-Pay-Later</a></p>
+                                        <p><a href="https://wa.me/+27673428394?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A"
+                                                target="_blank">Free Delivery in 24 hours</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -677,9 +701,11 @@
             <div class="content">
                 <p>Thank you for your interest in GreenFarm. We are still growing something amazing.</p>
 
-                <p>In the meantime you can send us a whatsapp text so that we can keep you in the loop <a href="https://wa.me/+27722821975?text=Hello%20Farmer%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A" target="_blank"><img width="30px" src="./assets/img/whatsapp.svg"
-                    alt="whatsapp icon" class="whatsapp"></a></p>
-                
+                <p>In the meantime you can send us a whatsapp text so that we can keep you in the loop <a
+                        href="https://wa.me/+27722821975?text=Hello%20Farmer%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A"
+                        target="_blank"><img width="30px" src="./assets/img/whatsapp.svg" alt="whatsapp icon"
+                            class="whatsapp"></a></p>
+
             </div>
         </div>
     </div>
