@@ -212,40 +212,40 @@
                     <div class="form-holderZ">
                         <div class="form-contentZ">
                             <div class="form-itemsZ">
-                                <form class="requires-validation" novalidate>
+                                <form class="requires-validation" id="TraderForm" action="" method="post">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <select class="form-select mt-3" required>
+                                            <select class="form-select mt-3" required id="traders" name="trader">
                                                 <option selected disabled value="trader">Trader</option>
                                             </select>
                                         </div>
 
                                         <div class="col-md-6">
-                                            <input class="form-control mt-3" type="text" name="name"
+                                            <input class="form-control mt-3" type="text" id="nametrader" name="nametrader"
                                                 placeholder="Full Name" required>
                                             <div class="valid-feedback">Full name field is valid!</div>
                                             <div class="invalid-feedback">Full name field cannot be blank!</div>
                                         </div>
                                         <div class="col-md-6">
-                                            <input class="form-control mt-3" type="email" name="email"
+                                            <input class="form-control mt-3" type="email" id="emailtrader" name="emailtrader"
                                                 placeholder="E-mail Address" required>
                                             <div class="valid-feedback">Email field is valid!</div>
                                             <div class="invalid-feedback">Email field cannot be blank!</div>
                                         </div>
                                         <div class="col-md-6">
-                                            <input class="form-control mt-3" type="text" name="phone"
+                                            <input class="form-control mt-3" type="text" id="phonetrader" name="phonetrader"
                                                 placeholder="Phone Number" required>
                                             <div class="valid-feedback">Phone Number field is valid!</div>
                                             <div class="invalid-feedback">Phone Number field cannot be blank!</div>
                                         </div>
                                         <div class="col-md-6">
-                                            <input class="form-control mt-3" type="text" name="Location"
+                                            <input class="form-control mt-3" type="text" id="locationtrader" name="locationtrader"
                                                 placeholder="Location" required>
                                             <div class="valid-feedback">Location is valid!</div>
                                             <div class="invalid-feedback">Location cannot be blank!</div>
                                         </div>
                                         <div class="col-md-12">
-                                            <select class="form-select mt-3" required>
+                                            <select class="form-select mt-3" id="servicestrader" name="servicestrader" required>
                                                 <option selected value="Street Vendor">Street Vendor</option>
                                                 <option value="Market">Market</option>
                                                 <option value="Spaza">Spaza</option>
@@ -253,36 +253,36 @@
                                             </select>
                                         </div>
                                         <div class="col-md-12">
-                                            <textarea name="Additional" id="" cols="30" rows="5"
+                                            <textarea name="additionaltrader" id="additionaltrader" cols="30" rows="5"
                                                 class="form-control mt-3"
                                                 placeholder="Additional Information"></textarea>
                                         </div>
                                         <div class="col-md-12">
                                             <div>
                                                 <fieldset>
-                                                    <legend id="title6" class="desc">
+                                                    <legend id="cropstrader" class="desc">
                                                         Please select your crops
                                                     </legend>
                                                     <div class="row">
                                                         <div class="col-md-3">
                                                             <div>
-                                                                <input id="Field6" name="Field6" type="checkbox"
+                                                                <input id="Field6" name="cropstrader[]" type="checkbox"
                                                                     value="Beetroot" tabindex="8">
                                                                 <label class="choice" for="Field6">Beetroot</label>
                                                             </div>
                                                             <div>
-                                                                <input id="Field7" name="Field7" type="checkbox"
+                                                                <input id="Field7" name="cropstrader[]" type="checkbox"
                                                                     value="Butternut" tabindex="9">
                                                                 <label class="choice" for="Field7">Butternut</label>
                                                             </div>
                                                             <div>
-                                                                <input id="Field8" name="Field8" type="checkbox"
+                                                                <input id="Field8" name="cropstrader[]" type="checkbox"
                                                                     value="Cabbage" tabindex="10">
                                                                 <label class="choice" for="Field8">Cabbage</label>
                                                                 </span>
                                                             </div>
                                                             <div>
-                                                                <input id="Field8" name="Field8" type="checkbox"
+                                                                <input id="Field8" name="cropstrader[]" type="checkbox"
                                                                     value="Hubbard Squash" tabindex="10">
                                                                 <label class="choice" for="Field8">Hubbard
                                                                     Squash</label>
@@ -291,17 +291,17 @@
                                                         </div>
                                                         <div class="col-md-3">
                                                             <div>
-                                                                <input id="Field6" name="Field6" type="checkbox"
+                                                                <input id="Field6" name="cropstrader[]" type="checkbox"
                                                                     value="Red Pepper" tabindex="8">
                                                                 <label class="choice" for="Field6">Red Pepper</label>
                                                             </div>
                                                             <div>
-                                                                <input id="Field7" name="Field7" type="checkbox"
+                                                                <input id="Field7" name="cropstrader[]" type="checkbox"
                                                                     value="Green Pepper" tabindex="9">
                                                                 <label class="choice" for="Field7">Green Pepper</label>
                                                             </div>
                                                             <div>
-                                                                <input id="Field8" name="Field8" type="checkbox"
+                                                                <input id="Field8" name="cropstrader[]" type="checkbox"
                                                                     value="Yellow Pepper" tabindex="10">
                                                                 <label class="choice" for="Field8">Yellow Pepper</label>
                                                                 </span>
@@ -309,17 +309,17 @@
                                                         </div>
                                                         <div class="col-md-3">
                                                             <div>
-                                                                <input id="Field6" name="Field6" type="checkbox"
+                                                                <input id="Field6" name="cropstrader[]" type="checkbox"
                                                                     value="Onion" tabindex="8">
                                                                 <label class="choice" for="Field6">Onion</label>
                                                             </div>
                                                             <div>
-                                                                <input id="Field7" name="Field7" type="checkbox"
+                                                                <input id="Field7" name="cropstrader[]" type="checkbox"
                                                                     value="Potato" tabindex="9">
                                                                 <label class="choice" for="Field7">Potato</label>
                                                             </div>
                                                             <div>
-                                                                <input id="Field8" name="Field8" type="checkbox"
+                                                                <input id="Field8" name="cropstrader[]" type="checkbox"
                                                                     value="Pumpkin" tabindex="10">
                                                                 <label class="choice" for="Field8">Pumpkin</label>
                                                                 </span>
@@ -327,17 +327,17 @@
                                                         </div>
                                                         <div class="col-md-3">
                                                             <div>
-                                                                <input id="Field6" name="Field6" type="checkbox"
+                                                                <input id="Field6" name="cropstrader[]" type="checkbox"
                                                                     value="Spinach" tabindex="8">
                                                                 <label class="choice" for="Field6">Spinach</label>
                                                             </div>
                                                             <div>
-                                                                <input id="Field7" name="Field7" type="checkbox"
+                                                                <input id="Field7" name="cropstrader[]" type="checkbox"
                                                                     value="Tomato" tabindex="9">
                                                                 <label class="choice" for="Field7">Tomato</label>
                                                             </div>
                                                             <div>
-                                                                <input id="Field8" name="Field8" type="checkbox"
+                                                                <input id="Field8" name="cropstrader[]" type="checkbox"
                                                                     value="Carrot" tabindex="10">
                                                                 <label class="choice" for="Field8">Carrot</label>
                                                                 </span>
@@ -347,8 +347,9 @@
                                                 </fieldset>
                                             </div>
                                         </div>
-                                        <div class="form-button mt-3">
+                                        <div class="form-button mt-3 button-area">
                                             <button id="submit" type="submit" class="register-buttons">Send</button>
+                                            <span></span>
                                         </div>
                                     </div>
                                 </form>
@@ -577,33 +578,33 @@
                                 <div class="form-items">
                                     <h3>Contact Us</h3>
                                     <p>Fill in the data below.</p>
-                                    <form class="requires-validation" novalidate>
+                                    <form class="requires-validation" id="contact-form" action="" method="post">
                                         <div class="col-md-12">
-                                            <input class="form-control" type="text" name="name" placeholder="Full Name"
+                                            <input class="form-control" type="text" id="namecontact" name="namecontact" placeholder="Full Name"
                                                 required>
                                             <div class="valid-feedback">Full name field is valid!</div>
                                             <div class="invalid-feedback">Full name field cannot be blank!</div>
                                         </div>
                                         <div class="col-md-12">
-                                            <input class="form-control" type="email" name="email"
+                                            <input class="form-control" type="email" id="emailcontact" name="emailcontact"
                                                 placeholder="E-mail Address" required>
                                             <div class="valid-feedback">Email field is valid!</div>
                                             <div class="invalid-feedback">Email field cannot be blank!</div>
                                         </div>
                                         <div class="col-md-12">
-                                            <input class="form-control" type="text" name="phone"
+                                            <input class="form-control" type="text" id="phonecontact" name="phonecontact"
                                                 placeholder="Phone Number" required>
                                             <div class="valid-feedback">Phone Number field is valid!</div>
                                             <div class="invalid-feedback">Phone Number field cannot be blank!</div>
                                         </div>
                                         <div class="col-md-12">
-                                            <input class="form-control" type="text" name="Location"
+                                            <input class="form-control" type="text" id="locationcontact" name="locationcontact"
                                                 placeholder="Location" required>
                                             <div class="valid-feedback">Location is valid!</div>
                                             <div class="invalid-feedback">Location cannot be blank!</div>
                                         </div>
                                         <div class="col-md-12">
-                                            <select class="form-select mt-3" required>
+                                            <select class="form-select mt-3" required  id="servicescontact" name="servicescontact">
                                                 <option selected disabled value="">Services</option>
                                                 <option value="Geo-Trading">Geo-Trading</option>
                                                 <option value="Whatsapp Chatbot">Whatsapp Chatbot</option>
@@ -615,12 +616,13 @@
                                             <div class="invalid-feedback">Please select a service!</div>
                                         </div>
                                         <div class="col-md-12">
-                                            <textarea name="" id="" cols="30" rows="10" class="form-control"
+                                            <textarea name="additionalcontact" id="additionalcontact" cols="30" rows="10" class="form-control"
                                                 placeholder="Additional Information"></textarea>
                                         </div>
 
-                                        <div class="form-button mt-3">
+                                        <div class="form-button mt-3 button-area">
                                             <button id="submit" type="submit" class="call2actions-buttons">Send</button>
+                                            <span></span>
                                         </div>
                                     </form>
                                 </div>
@@ -713,6 +715,7 @@
         </div>
     </div>
     <script src="index.js"></script>
+    <script src="form.js"></script>
     <script src="modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
