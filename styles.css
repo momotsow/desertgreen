@@ -664,9 +664,10 @@ img {vertical-align: middle;}
   .h2, h2 {
     font-size: calc(2rem + .9vw)!important;
   }
-  /* .secondary-cta img {
-    width: 255px;
-  } */
+  
+  .farmer-trader {
+    padding-top: 150px;
+  }
 
   .header-section {
     height: fit-content;
@@ -933,4 +934,8 @@ img {vertical-align: middle;}
     width: 380px;
     margin-top: -500px;
   }
+
+  .farmer-trader {
+    padding-top: 200px;
+}
 }
