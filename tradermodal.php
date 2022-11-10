@@ -3,7 +3,7 @@
 header('Access-Control-Allow-Origin: *');
 
 // Check for empty fields
-if(empty($_POST['farmer'])      ||
+if(empty($_POST['farmers'])      ||
    empty($_POST['name'])    ||
    empty($_POST['email'])    ||
    empty($_POST['phone'])     ||
@@ -19,7 +19,7 @@ if(empty($_POST['farmer'])      ||
    return false;
    }
 
-$farmer = $_POST['farmer'];
+$farmer = $_POST['farmers'];
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
