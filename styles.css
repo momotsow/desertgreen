@@ -313,7 +313,6 @@ padding-left: 45px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
   padding: 0!important;
 }
 
@@ -331,7 +330,6 @@ padding-left: 45px;
   align-items: center;
   width: 100%;
 }
-
   
 /* Slider */
 .container {
