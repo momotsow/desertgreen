@@ -143,10 +143,36 @@ nav {
   margin-bottom: 10px;
   color: #ec5242;
 }
+.not {
+  display: none;
+}
+.button-service {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
 
 .call2actions {
   display: block;
   text-align: center;
+}
+
+.dgfarm {
+  display: inline-block;
+  padding: 10px 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  background-blend-mode: overlay;
+  border: 1px solid gray;
+  color: gray !important;
+  border-radius: 6px;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 12px;
 }
 
 .call2actions-buttons {
@@ -262,6 +288,9 @@ text-align: center;
 .greenFarm h3, .greenKart h3 {
 text-align: center;
 font-weight: 700;
+}
+.greenKart h3 {
+  color: #fff !important;
 }
 .services ul {
 list-style: disc;
@@ -889,7 +918,9 @@ img {vertical-align: middle;}
   p {
     font-size: 20px;
   }
-
+  .not {
+    display: none !important;
+  }
   .headline .title {
     font-size: 2.8rem;
     font-weight: 700;
@@ -904,6 +935,9 @@ img {vertical-align: middle;}
   .services ul {
     font-size: 20px;
     padding-left: 85px;
+  }
+  .service-title h3 {
+    color: #fff;
   }
 
   .soil .heading h2 {
@@ -937,3 +971,11 @@ img {vertical-align: middle;}
     padding-top: 200px;
 }
 }
+
+@media only screen and (min-width: 700px) and (max-width: 1020px) {
+  .not {
+    display: block;
+    height: 35px;
+  }
+}
+
