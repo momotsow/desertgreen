@@ -33,7 +33,7 @@
   -webkit-animation-name: kenburns-2;
           animation-name: kenburns-2;
   z-index: 2;
-  background-image: url(./assets/vendor.jpg)
+  background-image: url(./assets/vendor.png)
 }
 .slideshow-image:nth-child(3) {
   -webkit-animation-name: kenburns-3;
@@ -45,7 +45,7 @@
   -webkit-animation-name: kenburns-4;
           animation-name: kenburns-4;
   z-index: 0;
-  background-image: url(./assets/trucks.jpg)
+  background-image: url(./assets/trucks.png)
 }
 
 @-webkit-keyframes kenburns-1 {
