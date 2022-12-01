@@ -388,7 +388,7 @@ padding-left: 45px;
 }
 
 .soil .heading h2 {
-  font-size: 3rem;
+  font-size: calc(2.5rem + .9vw);
   margin-top: 30px;
   margin-bottom: 0!important;
 }
@@ -671,6 +671,28 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
+.phone {
+  text-align: right;
+}
+
+.phone img {
+  width: 350px;
+}
+
+.phone-desc {
+  background-color: #FFC533;
+  color: #fff;
+  width: 75%;
+}
+
+.img-icons {
+  background-color: #002512;
+}
+
+.img-icons img {
+  width: 100%;
+}
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -717,7 +739,7 @@ img {vertical-align: middle;}
 
 @media only screen and (min-width: 768px){
   .h2, h2 {
-    font-size: calc(2rem + .9vw)!important;
+    font-size: calc(4.5rem + .9vw)!important;
   }
   
   .farmer-trader {
@@ -914,10 +936,11 @@ img {vertical-align: middle;}
     width: 32%;
   }
   .slider-logo {
-    margin-right: 13rem;
+    margin-right: 25rem;
   }
+  
   .soil .heading h2 {
-    font-size: 4.9rem!important;
+    font-size: calc(2.5rem + .9vw);
     margin: 4rem 0 0 0;
   }
     
@@ -979,7 +1002,7 @@ img {vertical-align: middle;}
   }
 
   .soil .heading h2 {
-    font-size: 6rem!important;
+    font-size: calc(4rem + .9vw);
   }
 
   .container.soil > p {
@@ -1061,7 +1084,7 @@ img {vertical-align: middle;}
   to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
+/* #myDiv {
   display: none;
   text-align: center;
-}
+} */
