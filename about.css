@@ -131,6 +131,8 @@ justify-content: flex-end;
 .about-solution{
     text-align: center;
 }
+
+
   @media(max-width: 790px){
     .wrapper .center-line{
       left: 40px;
@@ -157,10 +159,20 @@ justify-content: flex-end;
     .wrapper .row{
       margin: 10px 0;
     }
+    .team-img {
+      width: 100%;
+    }
   }
+
   @media(min-width: 700px) {
     .about-solution{
         text-align: center;
         padding: 0px 60px;
     }
+  }
+  @media only screen and (min-width: 1024px) {
+    .team-img {
+      width: 250px;
+    }
+  
   }

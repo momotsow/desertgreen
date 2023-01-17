@@ -34,3 +34,30 @@ var myVar;
 //   document.getElementById("loader").style.display = "none";
 //   document.getElementById("myDiv").style.display = "block";
 // }
+
+let slideIndx = 1;
+showSlid(slideIndx);
+
+function plusSlid(n) {
+  showSlid(slideIndx += n);
+}
+
+function currentSlid(n) {
+  showSlid(slideIndx = n);
+}
+
+function showSlid(n) {
+  let i;
+  let slides = document.getElementsByClassName("farmTradeSlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndx = 1}    
+  if (n < 1) {slideIndx = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndx-1].style.display = "block";  
+  dots[slideIndx-1].className += " active";
+}
