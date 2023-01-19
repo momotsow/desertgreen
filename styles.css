@@ -11,7 +11,7 @@
 
 p,h1,h2,h3,h4,h5,h6 {
   color: #002512
-} 
+}
 
 .row {
   padding: 0 !important;
@@ -191,7 +191,7 @@ nav {
 }
 
 .call2actions-buttons:hover {
-  color: #002512;
+  color: #002512!important;
   background-color: #FFC533;
   border: none;
 }
@@ -248,7 +248,7 @@ body > section.container.farmer-trader > div:nth-child(3) > div > div > ul {
 
 .our-solution-list {
   text-align: left;
-  padding: 10px 0 0 0;
+  padding: 10px 0 15px 0;
   list-style: inside;
 }
 
@@ -329,6 +329,7 @@ padding-left: 45px;
   -webkit-align-items: center;
   align-items: center;
   width: 100%;
+  padding-left: 40px;
 }
   
 /* Slider */
@@ -614,6 +615,7 @@ footer {
   text-align: left;
 }
 .mySlides {display: none}
+.farmTradeSlides {display: none}
 img {vertical-align: middle;}
 
 .slideshow-container {
@@ -671,26 +673,49 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-.phone {
-  text-align: right;
+.phone-cont {
+  margin-top: 70px;
+  align-items: center;
 }
 
-.phone img {
-  width: 350px;
+.phone {
+  display: none;
+}
+
+.phone-next {
+  color: #002512 !important;
+}
+.phonedesc-cont {
+  margin-top: 2rem;
 }
 
 .phone-desc {
   background-color: #FFC533;
   color: #fff;
-  width: 75%;
+  border-radius: 10px;
 }
 
 .img-icons {
   background-color: #002512;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
-.img-icons img {
-  width: 100%;
+.phonedesc-text {
+  padding: 10px;
+  text-align: left;
+}
+
+.phonedesc-text h6 {
+  text-align: center;
+}
+
+.specific-width {
+  width: 60%;
+  padding: 40px;
 }
 
 .fade {
@@ -738,6 +763,9 @@ img {vertical-align: middle;}
 }
 
 @media only screen and (min-width: 768px){
+  .section-title {
+    font-size: 64px!important;
+  }
   .h2, h2 {
     font-size: calc(4.5rem + .9vw)!important;
   }
@@ -936,7 +964,7 @@ img {vertical-align: middle;}
     width: 32%;
   }
   .slider-logo {
-    margin-right: 25rem;
+    margin-right: 34rem;
   }
   
   .soil .heading h2 {
@@ -967,6 +995,11 @@ img {vertical-align: middle;}
   .about {
     padding-top: 90vh;
   }
+
+  .specific-width {
+    width: 72%;
+    padding: 30px;
+  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 834px) {
@@ -975,7 +1008,7 @@ img {vertical-align: middle;}
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   p {
     font-size: 20px;
   }
@@ -1030,13 +1063,50 @@ img {vertical-align: middle;}
 
   .farmer-trader {
     padding-top: 200px;
-}
+  }
+
+  .phone {
+    text-align: right;
+    z-index: 2;
+    display: block;
+    margin-right: 50px;
+  }
+
+  .phone img {
+    width: 350px;
+  }
+
+  .phone-description-err {
+    position: absolute;
+    margin-left: 60px;
+  }
+
+  .phone-desc {
+    width: 60%;
+    padding-right: 45px;
+  }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1020px) {
   .not {
     display: block;
     height: 35px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .phone {
+    margin-right: 100px;
+  }
+
+  .phone-description-err {
+    width: 88%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .phone {
+    margin-right: 150px;
   }
 }
 
