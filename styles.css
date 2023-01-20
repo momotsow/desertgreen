@@ -684,6 +684,7 @@ img {vertical-align: middle;}
 
 .phone-next {
   color: #002512 !important;
+  display: none;
 }
 .phonedesc-cont {
   margin-top: 2rem;
@@ -709,9 +710,9 @@ img {vertical-align: middle;}
   text-align: left;
 }
 
-.phonedesc-text h6 {
+/* .phonedesc-text h6 {
   text-align: center;
-}
+} */
 
 .specific-width {
   width: 60%;
@@ -998,7 +999,7 @@ img {vertical-align: middle;}
 
   .specific-width {
     width: 72%;
-    padding: 30px;
+    padding: 40px;
   }
 }
 
@@ -1009,6 +1010,9 @@ img {vertical-align: middle;}
 }
 
 @media only screen and (min-width: 1024px) {
+  .phone-next {
+    display: block;
+  }
   p {
     font-size: 20px;
   }
@@ -1085,6 +1089,10 @@ img {vertical-align: middle;}
     width: 60%;
     padding-right: 45px;
   }
+  .specific-width {
+    width: 55%;
+    padding: 49px;
+}
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1020px) {
@@ -1102,6 +1110,10 @@ img {vertical-align: middle;}
   .phone-description-err {
     width: 88%;
   }
+  .specific-width {
+    width: 65%;
+    padding: 40px;
+}
 }
 
 @media only screen and (min-width: 1300px) {
