@@ -293,7 +293,10 @@
     height: 86vh;
   }
   .headline-content {
-    top: 58%;
+    top: 61%;
+    padding: 1em 1em;
+    width: 90%;
+
   }
   .headline-content h1 {
     font-size: 30px;

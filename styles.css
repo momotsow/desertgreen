@@ -11,7 +11,7 @@
 
 p,h1,h2,h3,h4,h5,h6 {
   color: #002512
-} 
+}
 
 .row {
   padding: 0 !important;
@@ -191,7 +191,7 @@ nav {
 }
 
 .call2actions-buttons:hover {
-  color: #002512;
+  color: #002512!important;
   background-color: #FFC533;
   border: none;
 }
@@ -248,7 +248,7 @@ body > section.container.farmer-trader > div:nth-child(3) > div > div > ul {
 
 .our-solution-list {
   text-align: left;
-  padding: 10px 0 0 0;
+  padding: 10px 0 15px 0;
   list-style: inside;
 }
 
@@ -329,6 +329,7 @@ padding-left: 45px;
   -webkit-align-items: center;
   align-items: center;
   width: 100%;
+  padding-left: 40px;
 }
   
 /* Slider */
@@ -388,7 +389,7 @@ padding-left: 45px;
 }
 
 .soil .heading h2 {
-  font-size: 3rem;
+  font-size: calc(2.5rem + .9vw);
   margin-top: 30px;
   margin-bottom: 0!important;
 }
@@ -614,6 +615,7 @@ footer {
   text-align: left;
 }
 .mySlides {display: none}
+.farmTradeSlides {display: none}
 img {vertical-align: middle;}
 
 .slideshow-container {
@@ -671,6 +673,52 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
+.phone-cont {
+  margin-top: 70px;
+  align-items: center;
+}
+
+.phone {
+  display: none;
+}
+
+.phone-next {
+  color: #002512 !important;
+  display: none;
+}
+.phonedesc-cont {
+  margin-top: 2rem;
+}
+
+.phone-desc {
+  background-color: #FFC533;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.img-icons {
+  background-color: #002512;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.phonedesc-text {
+  padding: 10px;
+  text-align: left;
+}
+
+/* .phonedesc-text h6 {
+  text-align: center;
+} */
+
+.specific-width {
+  width: 60%;
+  padding: 40px;
+}
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -716,8 +764,11 @@ img {vertical-align: middle;}
 }
 
 @media only screen and (min-width: 768px){
+  .section-title {
+    font-size: 64px!important;
+  }
   .h2, h2 {
-    font-size: calc(2rem + .9vw)!important;
+    font-size: calc(4.5rem + .9vw)!important;
   }
   
   .farmer-trader {
@@ -914,10 +965,11 @@ img {vertical-align: middle;}
     width: 32%;
   }
   .slider-logo {
-    margin-right: 13rem;
+    margin-right: 34rem;
   }
+  
   .soil .heading h2 {
-    font-size: 4.9rem!important;
+    font-size: calc(2.5rem + .9vw);
     margin: 4rem 0 0 0;
   }
     
@@ -944,6 +996,11 @@ img {vertical-align: middle;}
   .about {
     padding-top: 90vh;
   }
+
+  .specific-width {
+    width: 72%;
+    padding: 40px;
+  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 834px) {
@@ -952,7 +1009,10 @@ img {vertical-align: middle;}
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
+  .phone-next {
+    display: block;
+  }
   p {
     font-size: 20px;
   }
@@ -979,7 +1039,7 @@ img {vertical-align: middle;}
   }
 
   .soil .heading h2 {
-    font-size: 6rem!important;
+    font-size: calc(4rem + .9vw);
   }
 
   .container.soil > p {
@@ -1007,6 +1067,31 @@ img {vertical-align: middle;}
 
   .farmer-trader {
     padding-top: 200px;
+  }
+
+  .phone {
+    text-align: right;
+    z-index: 2;
+    display: block;
+    margin-right: 50px;
+  }
+
+  .phone img {
+    width: 350px;
+  }
+
+  .phone-description-err {
+    position: absolute;
+    margin-left: 60px;
+  }
+
+  .phone-desc {
+    width: 60%;
+    padding-right: 45px;
+  }
+  .specific-width {
+    width: 55%;
+    padding: 49px;
 }
 }
 
@@ -1014,6 +1099,26 @@ img {vertical-align: middle;}
   .not {
     display: block;
     height: 35px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .phone {
+    margin-right: 100px;
+  }
+
+  .phone-description-err {
+    width: 88%;
+  }
+  .specific-width {
+    width: 65%;
+    padding: 40px;
+}
+}
+
+@media only screen and (min-width: 1300px) {
+  .phone {
+    margin-right: 150px;
   }
 }
 
@@ -1061,7 +1166,7 @@ img {vertical-align: middle;}
   to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
+/* #myDiv {
   display: none;
   text-align: center;
-}
+} */

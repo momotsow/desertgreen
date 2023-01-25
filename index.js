@@ -18,7 +18,7 @@ nav.addEventListener('click', () => {
 
 window.onscroll = function() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-    document.getElementById("logo").style.width = "60%";
+    document.getElementById("logo").style.width = "55%";
   } else {
     document.getElementById("logo").style.width = "80%";
   }
@@ -26,11 +26,38 @@ window.onscroll = function() {
 
 var myVar;
 
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
+// function myFunction() {
+//   myVar = setTimeout(showPage, 3000);
+// }
+
+// function showPage() {
+//   document.getElementById("loader").style.display = "none";
+//   document.getElementById("myDiv").style.display = "block";
+// }
+
+let slideIndx = 1;
+showSlid(slideIndx);
+
+function plusSlid(n) {
+  showSlid(slideIndx += n);
 }
 
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
+function currentSlid(n) {
+  showSlid(slideIndx = n);
+}
+
+function showSlid(n) {
+  let i;
+  let slides = document.getElementsByClassName("farmTradeSlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndx = 1}    
+  if (n < 1) {slideIndx = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndx-1].style.display = "block";  
+  dots[slideIndx-1].className += " active";
 }
