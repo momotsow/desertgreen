@@ -837,6 +837,12 @@ img {vertical-align: middle;}
     cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 
+
+.specific-width {
+  width: 60%;
+  padding: 20px;
+}
+
   /* .sli-img1 {
     width: 40%;
   }
