@@ -644,10 +644,12 @@ img {vertical-align: middle;}
   max-width: 100%;
   position: relative;
   margin: auto;
+}
+
+.service-slideshow {
   background-color: #FFC533;
   padding: 5px 0 70px 0;
 }
-
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -1010,7 +1012,7 @@ img {vertical-align: middle;}
     width: 32%;
   }
   .slider-logo {
-    margin-right: 34rem;
+    margin-right: 27rem;
   }
   
   .soil .heading h2 {
@@ -1149,6 +1151,9 @@ img {vertical-align: middle;}
     width: 55%;
     padding: 49px;
 }
+.slider-logo {
+  margin-right: 35rem;
+}
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1020px) {
@@ -1176,6 +1181,9 @@ img {vertical-align: middle;}
     width: 65%;
     padding: 40px;
 }
+.slider-logo {
+  margin-right: 43rem;
+}
 }
 
 @media only screen and (min-width: 1300px) {
@@ -1184,6 +1192,9 @@ img {vertical-align: middle;}
   }
   .phone {
     margin-right: 150px;
+  }
+  .slider-logo {
+    margin-right: 50rem;
   }
 }
 
