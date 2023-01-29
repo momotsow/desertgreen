@@ -3,6 +3,7 @@
 *, body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    cursor:default;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
