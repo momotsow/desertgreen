@@ -246,6 +246,28 @@ body > section.container.farmer-trader > div:nth-child(3) > div > div > ul {
   padding: 20px;
 }
 
+.sli-img1 {
+  width: 40%;
+}
+.sli-img2 {
+  width: 78%;
+}
+.sli-img3 {
+  width: 100%;
+}
+
+.sliCardBody {
+  padding: 20px 0  0 0 !important;
+}
+.sli-headText { 
+  color: #0D6B38;
+  font-weight: 700;
+}
+
+.abt-logistic {
+  padding: 30px 0;
+}
+
 .our-solution-list {
   text-align: left;
   padding: 10px 0 15px 0;
@@ -624,6 +646,10 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
+.service-slideshow {
+  background-color: #FFC533;
+  padding: 5px 0 70px 0;
+}
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -697,7 +723,7 @@ img {vertical-align: middle;}
 }
 
 .img-icons {
-  background-color: #002512;
+  background-color: #326B01; /*#002512;*/
   width: 100%;
   display: flex;
   justify-content: center;
@@ -731,6 +757,15 @@ img {vertical-align: middle;}
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+  .sli-img1 {
+    width: 40%;
+  }
+  .sli-img2 {
+    width: 78%;
+  }
+  .sli-img3 {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 358px) and (max-width: 360px) {
@@ -761,6 +796,18 @@ img {vertical-align: middle;}
   .about {
     padding-top: 78vh;
   }
+  .phone-desc {
+    margin-left: 10px;
+}
+  /* .sli-img1 {
+    width: 40%;
+  }
+  .sli-img2 {
+    width: 78%;
+  }
+  .sli-img3 {
+    width: 100%;
+  } */
 }
 
 @media only screen and (min-width: 768px){
@@ -901,7 +948,7 @@ img {vertical-align: middle;}
 
   .discription {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 16px;
   }
 
@@ -965,7 +1012,7 @@ img {vertical-align: middle;}
     width: 32%;
   }
   .slider-logo {
-    margin-right: 34rem;
+    margin-right: 27rem;
   }
   
   .soil .heading h2 {
@@ -1001,6 +1048,14 @@ img {vertical-align: middle;}
     width: 72%;
     padding: 40px;
   }
+
+  .abt-logistic {
+    padding: 20px 0;
+  }
+
+  .phone-desc {
+    margin-left: 10px;
+}
 }
 
 @media only screen and (min-width: 800px) and (max-width: 834px) {
@@ -1010,6 +1065,9 @@ img {vertical-align: middle;}
 }
 
 @media only screen and (min-width: 1024px) {
+  .abt-logistic {
+    padding: 30px 0;
+  }
   .phone-next {
     display: block;
   }
@@ -1026,7 +1084,7 @@ img {vertical-align: middle;}
 
   .discription {
     margin-top: 24px;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     font-size: 20px;
   }
 
@@ -1093,6 +1151,9 @@ img {vertical-align: middle;}
     width: 55%;
     padding: 49px;
 }
+.slider-logo {
+  margin-right: 35rem;
+}
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1020px) {
@@ -1100,9 +1161,15 @@ img {vertical-align: middle;}
     display: block;
     height: 35px;
   }
+  .abt-logistic {
+    padding: 15px 0;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
+  .abt-logistic {
+    padding: 30px 0;
+  }
   .phone {
     margin-right: 100px;
   }
@@ -1114,11 +1181,20 @@ img {vertical-align: middle;}
     width: 65%;
     padding: 40px;
 }
+.slider-logo {
+  margin-right: 43rem;
+}
 }
 
 @media only screen and (min-width: 1300px) {
+  .abt-logistic {
+    padding: 30px 0;
+  }
   .phone {
     margin-right: 150px;
+  }
+  .slider-logo {
+    margin-right: 50rem;
   }
 }
 

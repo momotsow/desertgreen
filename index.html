@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="typingeffect.css">
+
 
     <title>Desert Green Africa</title>
     <meta name="keywords"
@@ -407,9 +409,9 @@
                     </h1>
                     <p class="discription font-face">Enabling efficient supply of fresh produce
                         from scale farmers to Informal Traders within
-                        24 hours. 
-                    <br>Let’s Feed The Future.
-                    <br>Sign-up Now.
+                        24 hours. </p>
+                    <p class="discription font-face">Let’s Feed The Future.</p>
+                    <p class="discription font-face">Sign-up Now.
                     </p>
                     <div class="call2actions">
                         <a class="call2actions-buttons" data-toggle="modal" id="farmer">I am a
@@ -450,28 +452,31 @@
 
             <div class="sli">
                 <div class="card">
-                    <img src="./assets/img/SAB.jpg" class="card-img-top" alt="SAB Logo">
-                    <div class="card-body">
-                        <p class="card-text">Collaborated in the SAB Ltd. Nelson Mandela Day's corporate Social
-                            Responsibility program to equip rural dwellers in Bushbuckridge Mpumalanga to start
-                            micro-farms
-                            using unutilized backyard plots in 2017.</p>
+                    <div class="margin-t-20 card-text space-evenly text-center">
+                        <img src="./assets/img/Picture3.png" alt="" class="sli-img1">
+                    </div>
+                    <div class="card-body sliCardBody">
+                        <h5 class="sli-headText"> Crop Listing & Ordering</h5>
+                        <p class="card-text">After sign-up & Location sharing, farmers can list crops that are ready for sale or harvest & Trader's place order via App or WhatsApp Chatbot
+                        </p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./assets/img/EO GSEA.png" class="card-img-top" alt="EO Logo">
-                    <div class="card-body">
-                        <p class="card-text">First place winner of the 2018 South African Global Student
-                            Entrepreneurship
-                            Awards (GSEA-SA) competition.</p>
+                    <div class="margin-t-20 card-text space-evenly text-center">
+                        <img src="./assets/img/Picture1.png" alt="" class="sli-img2">
+                    </div>
+                    <div class="card-body sliCardBody">
+                        <h5 class="sli-headText">Aggregated Supply & Distributed Storage</h5>
+                        <p class="card-text">Upon receiving an order, farmers close to each other can share transportation costs and deliver produce to our mobile cold storage containers</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./assets/img/Digital Africa.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Honoured with the Sergey Vhykodtsev award for being a resilient business
-                            that
-                            used its obstacles to grow.</p>
+                    <div class="m-t-20 card-text text-center space-evenly abt-logistic">
+                        <img src="./assets/img/Picture2.png" alt="" class="sli-img3">
+                    </div>
+                    <div class="card-body sliCardBody">
+                        <h5 class="sli-headText"> Delivery from Storage to Traders</h5>
+                        <p class="card-text">Within 24 hours of placing an order, we deliver directly to Traders stalls for free using geo-locations</p>
                     </div>
                 </div>
                 <!-- <div class="card"  >
@@ -487,10 +492,10 @@
 
         </section>
         <div class="cabbage"></div>
-        <section class="container services" id="services">
+        <section class=" services" id="services">
 
-            <h2 class="section-title">Services</h2>
-            <div class="text-paragraph">
+            <h2 class="container section-title">Services</h2>
+            <div class="container text-paragraph">
                 <h4>We provide a market space for both the informal trader and small-scale farmers who needs a market
                     for
                     their produce.</h4>
@@ -500,7 +505,7 @@
                     investors interested in agriculture in Africa.</p>
 
             </div>
-            <div class="row service-table">
+            <!-- <div class="row service-table">
                 <div class="col-md-6 col-sm-12 greenFarm">
                     <div class="service-title">
                         <h3>DG GreenFarm</h3>
@@ -533,8 +538,8 @@
                             target="_blank" class="call2actions-buttons button">Register</a>
                     </div>
                 </div>
-            </div>
-            <div class="slideshow-container">
+            </div> -->
+            <div class="slideshow-container service-slideshow">
                 <div class="farmTradeSlides">
                     <div class="text-center d-flex flex-row-reverse phone-cont">
                         <div class="phone">
@@ -582,7 +587,7 @@
                             <div class="phone-desc">
                                 <div class="d-flex phonedesc-cont">
                                     <div class="img-icons specific-width">
-                                        <img src="./assets/img/delivery-icon.png" alt="">
+                                        <img src="./assets/img/Picture2.png" width="100%" alt="">
                                     </div>
                                     <div class="phonedesc-text">
                                         <h6>Free Delivery in 24 hours</h6>
@@ -660,6 +665,11 @@
                 <span class="dot" onclick="currentSlid(1)"></span>
                 <span class="dot" onclick="currentSlid(2)"></span>
             </div>
+            <div class="text-center recommendation-btn">
+                <a class="call2actions-buttons recommendation"
+                    href="https://wa.me/+27680688117?text=Hello%20Trader%0A%0AHow%20can%20we%20help%20you%20Feed%20the%20Future%3F%20%F0%9F%98%8A"
+                    target="_blank"><img src="./assets/img/whatsapp.svg" alt="whatsapp"> Get recommendation</a>
+            </div>
         </section>
         <div class="onion"></div>
         <section class="container soil">
@@ -682,31 +692,30 @@
                             <div class="logos slider-logo">
                                 <img src="./assets/img/Digital Africa.png" height="auto" width="100%"
                                     alt="Digital Africa Logo" class="image">
-                                <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo"
-                                    class="image">
+                                <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo" class="image">
                                 <img src="./assets/img/UP.jpg" height="auto" width="100%"
                                     alt="University of Pretoria Logo" class="image">
                                 <img src="./assets/img/SAB.jpg" height="auto" width="100%" alt="SAB Logo" class="image">
                                 <img src="./assets/img/uct.jpeg" height="auto" width="100%"
                                     alt="University of Cape Town GSB Logo" class="image">
-                                <img src="./assets/img/further.jpeg" height="auto" width="100%" alt="Further Logo"
-                                    class="image">
+                                <img src="./assets/img/further.jpeg" height="auto" width="100%" alt="Further Logo" class="image">
                                 <img src="./assets/img/1000.jpg" height="auto" width="100%" alt="1000 Logo"
                                     class="image">
+                                <img src="./assets/img/MEST Africa Logo.jfif" height="auto" width="100%" alt="MEST Logo" class="image">
                             </div>
                             <div class="logos">
                                 <img src="./assets/img/Digital Africa.png" height="auto" width="100%"
                                     alt="Digital Africa Logo" class="image">
-                                <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo"
-                                    class="image">
+                                <img src="./assets/img/EO GSEA.png" height="auto" width="100%" alt="Digital Africa Logo" class="image">
                                 <img src="./assets/img/UP.jpg" height="auto" width="100%"
                                     alt="University of Pretoria Logo" class="image">
                                 <img src="./assets/img/SAB.jpg" height="auto" width="100%" alt="SAB Logo" class="image">
                                 <img src="./assets/img/uct.jpeg" height="auto" width="100%"
                                     alt="University of Cape Town GSB Logo" class="image">
-                                <img src="./assets/img/further.jpeg" height="auto" width="100%" alt="Further Logo"
-                                    class="image">
+                                <img src="./assets/img/further.jpeg" height="auto" width="100%" alt="Further Logo" class="image">
                                 <img src="./assets/img/1000.jpg" height="auto" width="100%" alt="1000 Logo"
+                                    class="image">
+                                <img src="./assets/img/MEST Africa Logo.jfif" height="auto" width="100%" alt="MEST Logo"
                                     class="image">
                             </div>
                         </div>
