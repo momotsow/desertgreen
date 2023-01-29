@@ -369,7 +369,7 @@ padding-left: 45px;
   margin: 0 0 1rem 0;
 }
 .image {
-  width: calc(100% / 2);
+  width: calc(100% / 9);
   animation: fade-in 0.5s 
     cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
@@ -799,6 +799,16 @@ img {vertical-align: middle;}
   .phone-desc {
     margin-left: 10px;
 }
+
+.slider-logo {
+  margin-right: 30rem !important;
+}
+.image {
+  width: 86px;
+  animation: fade-in 0.5s 
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
   /* .sli-img1 {
     width: 40%;
   }
