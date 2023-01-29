@@ -637,6 +637,19 @@ footer {
   list-style: disc;
   text-align: left;
 }
+.abt-list {
+  list-style: none;
+  text-align: left;
+}
+
+.abt-list  li::before {
+  content: "\2022";
+  color: #FF9A33;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
 .mySlides {display: none}
 .farmTradeSlides {display: none}
 img {vertical-align: middle;}
