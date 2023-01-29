@@ -4,21 +4,32 @@
     width: auto;
     margin: auto;
 }
-.phonedesc-text h6 {
+
+.reveal {
     width: 25ch;
     font-weight: 700;
     color: #326B01;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(31, end), blink-caret 0.5s step-end infinite alternate;
-}
+  }
+  
+  .reveal.active {
+    animation: typing 2s steps(31, end);
+    background-color: transparent;
+  }
+/* .phonedesc-text h6.active {
+    width: 25ch;
+    font-weight: 700;
+    color: #326B01;
+    white-space: nowrap;
+    overflow: hidden;
+    
+} */
+
 @-webkit-keyframes typing {
     from {
         width: 0;
     }
 }
-@-webkit-keyframes blink-caret {
-    50% {
-        border-color: transparent;
-    }
-}
+
+
