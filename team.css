@@ -67,14 +67,14 @@
 
 .card__body {
     position: relative;
-    height: 185px;
-    padding: 20px;
+    height: 105px;
+    padding: 10px 20px 0px 20px;
     -webkit-transition: height 0.5s;
     transition: height 0.5s;
 }
 
 .card:hover .card__body {
-    height: 300px;
+    height: 320px;
 }
 
 .card__category {
