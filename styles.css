@@ -27,6 +27,20 @@ ul {
   list-style: none;
 }
 
+.our-solution-list, .about-list, .abt-list {
+  list-style: none;
+  text-align: left;
+}
+
+.our-solution-list li::before, .about-list li::before, .abt-list li::before{
+  content: "\2022";
+  color: #FF9A33;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
 a {
   text-decoration: none!important;
   color: #fff!important;
@@ -271,8 +285,8 @@ body > section.container.farmer-trader > div:nth-child(3) > div > div > ul {
 
 .our-solution-list {
   text-align: left;
-  padding: 10px 0 15px 0;
-  list-style: inside;
+  padding: 10px 0 15px 15px;
+  list-style: none;
 }
 
 .farmer-trader ul > li:nth-child(n) {
@@ -633,7 +647,7 @@ footer {
   margin-bottom: 50px;
   padding-top: 85vh;
 }
-.about-list {
+.about-lists {
   list-style: disc;
   text-align: left;
 }
@@ -821,6 +835,12 @@ img {vertical-align: middle;}
   width: 86px;
   animation: fade-in 0.5s 
     cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+
+.specific-width {
+  width: 60%;
+  padding: 20px;
 }
 
   /* .sli-img1 {
