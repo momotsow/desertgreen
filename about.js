@@ -1,3 +1,14 @@
+const clos = document.querySelector('.card__category');
+const cardDescription = document.querySelector('.card__description');
+
+// if(clos.innerHTML.includes('-')) {
+//   clos.addEventListener('click', () => {
+
+//     clos.classList.add('deactivate');
+//   });
+// }
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -24,3 +35,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
