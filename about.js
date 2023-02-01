@@ -1,11 +1,13 @@
 const clos = document.querySelector('.card__category');
 const cardDescription = document.querySelector('.card__description');
 
+if(clos.innerHTML.includes('-')) {
+  clos.addEventListener('click', () => {
 
-clos.addEventListener('click', () => {
-  cardDescription.classList.add('activate');
-  // clos.classList.add('closeeed');
-});
+    clos.classList.add('deactivate');
+  });
+}
+
 
 let slideIndex = 1;
 showSlides(slideIndex);
