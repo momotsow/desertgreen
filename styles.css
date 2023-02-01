@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
-
+@font-face {
+  font-family: Commissioner;
+  src: url(https://desertgreen.co.za/assets/font/Commissioner.ttf);
+  src: url(https://momotsow.github.io/desertgreen//assets/font/Commissioner.ttf);
+}
+  
 html {
   scroll-behavior: smooth;
 }
 
 *, body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Commissioner', sans-serif;
     font-weight: 400;
     cursor:default;
     -webkit-font-smoothing: antialiased;

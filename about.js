@@ -1,14 +1,3 @@
-const clos = document.querySelector('.card__category');
-const cardDescription = document.querySelector('.card__description');
-
-// if(clos.innerHTML.includes('-')) {
-//   clos.addEventListener('click', () => {
-
-//     clos.classList.add('deactivate');
-//   });
-// }
-
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -36,3 +25,20 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+// if (window.innerWidth < 900) {
+//   const zzz = document.getElementById('zzz');
+//   const zzzr = document.getElementById('zzzr');
+//   const clos = document.querySelector('.card__category');
+
+//   const cardDescription = document.getElementsByClassName('card__description');
+        
+//   zzzr.addEventListener('click', () => {
+//     alert("click")
+   
+//   })
+//   zzz.addEventListener('click', () => {
+//     alert("click")
+   
+//   })
+// }
