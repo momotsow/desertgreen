@@ -1,3 +1,12 @@
+const clos = document.querySelector('.card__category');
+const cardDescription = document.querySelector('.card__description');
+
+
+clos.addEventListener('click', () => {
+  cardDescription.classList.add('activate');
+  // clos.classList.add('closeeed');
+});
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -24,3 +33,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+

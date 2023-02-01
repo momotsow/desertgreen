@@ -50,11 +50,11 @@
     transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
 }
 
-.card:hover .card__thumb {
+.cardWithDesc:hover .card__thumb {
     height: 130px;
 }
 
-.card:hover .card__thumb img {
+.cardWithDesc:hover .card__thumb img {
     opacity: 0.6;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
@@ -67,23 +67,28 @@
 
 .card__body {
     position: relative;
-    height: 185px;
-    padding: 20px;
+    height: 105px;
+    padding: 10px 20px 0px 20px;
     -webkit-transition: height 0.5s;
     transition: height 0.5s;
 }
 
-.card:hover .card__body {
-    height: 300px;
+.cardWithDesc:hover .card__body {
+    height: 320px;
 }
 
-.card__category {
+.cardWithDesc:hover .card__category::after {
+    content:"-";
+}
+
+.card__category::after {
     position: absolute;
     top: -25px;
     left: 0;
     height: 25px;
     padding: 0 15px;
     background-color: coral;
+    content:"+";
     color: #fff;
     text-transform: uppercase;
     font-size: 11px;
@@ -106,7 +111,7 @@
     color: coral;
 }
 
-.card__description {
+.card__description, .card__description.deactivate {
     position: absolute;
     left: 20px;
     right: 20px;
@@ -126,7 +131,7 @@
     transition-delay: 0s;
 }
 
-.card:hover .card__description {
+.cardWithDesc:hover .card__description, .activate {
     opacity: 1;
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
