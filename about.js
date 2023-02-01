@@ -4,7 +4,7 @@ const cardDescription = document.querySelector('.card__description');
 
 clos.addEventListener('click', () => {
   cardDescription.classList.add('activate');
-   clos.classList.add('closeeed');
+  // clos.classList.add('closeeed');
 });
 
 let slideIndex = 1;
