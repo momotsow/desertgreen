@@ -1,14 +1,4 @@
-/**
-* CARD
-**/
-
 .card {
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%; */
-    /* -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
-    transform: translateX(-50%) translateY(-50%) translateZ(0); */
-    width: 370px;
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -24,11 +14,6 @@
 .card:hover {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
-
-
-/**
-* THUMB
-**/
 
 .card__thumb {
     height: 245px;
@@ -60,11 +45,6 @@
     transform: scale(1.2);
 }
 
-
-/**
-* card_BODY
-**/
-
 .card__body {
     position: relative;
     height: 105px;
@@ -87,7 +67,7 @@
     left: 0;
     height: 25px;
     padding: 0 15px;
-    background-color: coral;
+    background-color: #FF9A33;
     content:"+";
     color: #fff;
     text-transform: uppercase;
@@ -98,7 +78,7 @@
 .card__title {
     margin: 0;
     padding: 0 0 10px 0;
-    color: #000;
+    color: #006938;
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
@@ -108,7 +88,7 @@
     margin: 0;
     padding: 0 0 10px 0;
     font-size: 19px;
-    color: coral;
+    color: #FF9A33;
 }
 
 .card__description, .card__description.deactivate {
