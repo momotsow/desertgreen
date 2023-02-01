@@ -308,7 +308,7 @@
     height: 86vh;
   }
   .headline-content {
-    top: 61%;
+    top: 55%!important;
     padding: 1em 1em;
     width: 90%;
 
