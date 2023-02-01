@@ -243,12 +243,27 @@
   padding-top: 0.5em;
 }
 
+.sign-up-now {
+  font-weight: 700;
+  color: #fff;
+}
+
 @media only screen and (min-width: 358px) and (max-width: 360px) {
   .slideshow {
     height: 87vh;
   }
   .headline-content {
-    top: 57%;
+    top: 55%!important;
+  }
+}
+
+@media only screen and (min-width: 370px) {
+  .headline-content {
+    top: 66%!important;
+  }
+  .headline-content p {
+    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -266,7 +281,7 @@
     height: 86vh;
   }
   .headline-content {
-    top: 57%;
+    top: 55%!important;
   }
 }
 
@@ -275,7 +290,7 @@
     height: 86vh;
   }
   .headline-content {
-    top: 58%;
+    top: 55%!important;
   }
   .headline-content h1 {
     font-size: 28px;
@@ -308,6 +323,12 @@
 
 @media only screen and (min-width: 768px) {
   .headline-content {
-    top: 61%;
+    top: 62%!important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .headline-content {
+    top: 60%!important;
   }
 }

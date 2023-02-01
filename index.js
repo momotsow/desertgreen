@@ -22,6 +22,7 @@ window.onscroll = function() {
   } else {
     document.getElementById("logo").style.width = "80%";
   }
+  behavior: 'smooth';
 };
 
 var myVar;

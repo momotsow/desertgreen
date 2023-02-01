@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -366,7 +370,7 @@ padding-left: 45px;
   -webkit-align-items: center;
   align-items: center;
   width: 100%;
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
   
 /* Slider */
@@ -664,9 +668,19 @@ footer {
   width: 1em;
   margin-left: -1em;
 }
-.mySlides {display: none}
-.farmTradeSlides {display: none}
-img {vertical-align: middle;}
+
+.mySlides {
+  display: none
+}
+
+.farmTradeSlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+  width: fit-content;
+}
 
 .slideshow-container {
   max-width: 100%;
@@ -737,11 +751,11 @@ img {vertical-align: middle;}
 }
 
 .phone-next {
-  color: #002512 !important;
+  color: #ffc533 !important;
   display: none;
 }
 .phonedesc-cont {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .phone-desc {
@@ -751,8 +765,8 @@ img {vertical-align: middle;}
 }
 
 .img-icons {
-  background-color: #326B01; /*#002512;*/
-  width: 100%;
+  /* background-color: #326B01;*/
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -768,10 +782,10 @@ img {vertical-align: middle;}
   text-align: center;
 } */
 
-.specific-width {
+/* .specific-width {
   width: 60%;
   padding: 40px;
-}
+} */
 
 .fade {
   animation-name: fade;
@@ -824,9 +838,6 @@ img {vertical-align: middle;}
   .about {
     padding-top: 78vh;
   }
-  .phone-desc {
-    margin-left: 10px;
-}
 
 .slider-logo {
   margin-right: 30rem !important;
@@ -835,12 +846,6 @@ img {vertical-align: middle;}
   width: 86px;
   animation: fade-in 0.5s 
     cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-}
-
-
-.specific-width {
-  width: 60%;
-  padding: 20px;
 }
 
   /* .sli-img1 {
@@ -991,8 +996,6 @@ img {vertical-align: middle;}
   }
 
   .discription {
-    margin-top: 10px;
-    margin-bottom: 20px;
     font-size: 16px;
   }
 
@@ -1088,18 +1091,18 @@ img {vertical-align: middle;}
     padding-top: 90vh;
   }
 
-  .specific-width {
+  /* .specific-width {
     width: 72%;
     padding: 40px;
-  }
+  } */
 
   .abt-logistic {
     padding: 20px 0;
   }
 
-  .phone-desc {
+  /* .phone-desc {
     margin-left: 10px;
-}
+} */
 }
 
 @media only screen and (min-width: 800px) and (max-width: 834px) {
@@ -1114,7 +1117,15 @@ img {vertical-align: middle;}
   }
   .phone-next {
     display: block;
+    background: #fff;
+    opacity: 0.5;
   }
+
+  .phone-next:hover {
+    background: #fff;
+    opacity: 1;
+  }
+
   p {
     font-size: 20px;
   }
@@ -1127,9 +1138,9 @@ img {vertical-align: middle;}
   }
 
   .discription {
-    margin-top: 24px;
+    /* margin-top: 24px; */
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .services ul {
@@ -1184,17 +1195,17 @@ img {vertical-align: middle;}
 
   .phone-description-err {
     position: absolute;
-    margin-left: 60px;
+    margin-left: 50px;
   }
 
   .phone-desc {
     width: 60%;
     padding-right: 45px;
   }
-  .specific-width {
+  /* .specific-width {
     width: 55%;
     padding: 49px;
-}
+} */
 .slider-logo {
   margin-right: 35rem;
 }
@@ -1221,10 +1232,7 @@ img {vertical-align: middle;}
   .phone-description-err {
     width: 88%;
   }
-  .specific-width {
-    width: 65%;
-    padding: 40px;
-}
+
 .slider-logo {
   margin-right: 43rem;
 }
